@@ -1,5 +1,4 @@
 import random
-import re
 import string
 from itertools import izip
 from collections import defaultdict
@@ -33,7 +32,7 @@ class Markov(object):
             key = (w1, w2)
             self.two_seeds[key].append(w3)
                 
-    def make_text(self, size = 25):
+    def make_text(self):
         
         prefixes = ['Mr.', 'Mrs.']
         starters = self.uppercases & self.propers
