@@ -11,6 +11,7 @@ class Markov(object):
         self.source_text = source_text
         self.corpus = self.source_text.read()
         self.words = self.corpus.split()
+        self.uppercases = set([word for word in self.words if word.istitle()])
         self.propers = self.get_propers()
         self.make_chains()
         
@@ -22,19 +23,9 @@ class Markov(object):
         words = set(no_punct.split())
         uppercases = set([word.lower() for word in words if word.istitle()])
         propers = uppercases - words
+        propers = set([word.title() for word in propers])
         return propers
         
-#     def k_chains(self, k):
-#         # only works for k = 3
-#     
-#         if len(self.words) < k:
-#             return
-#             
-#         for i in range(len(self.words) - (k - 1)):
-#             word_seq = []
-#             for j in range(0, k):
-#                 word_seq.append(self.words[i+j])
-#             yield tuple(word_seq)
             
     def make_chains(self):
 
@@ -45,13 +36,10 @@ class Markov(object):
     def make_text(self, size = 25):
         
         prefixes = ['Mr.', 'Mrs.']
-        uppercase = [word for word in self.words if word.istitle()]
-        start = random.choice(uppercase)
-#        start = random.choice(self.propers)
+        starters = self.uppercases & self.propers
+        start = random.sample(starters,1)[0]
+
         seed = self.words.index(start)
-#        while seed == -1:
-#            start = random.choice(self.propers)
-#            seed = self.words.find(start)
         w1, w2 = self.words[seed], self.words[seed + 1]        
         gen_words = [w1, w2]
         
@@ -63,8 +51,7 @@ class Markov(object):
         
     def make_tweet(self):
     
-#        characters = ['Elizabeth', 'Darcy', 'Bennet', 'Jane', 'Lydia', 'Mary', 'Kitty', 'Bingley', 'Ahab', 'Starbuck', 'Queequeg', 'Ishmael', 'Stubb', 'Flask', 'whale', 'Bourgh', 'he', 'she', 'him', 'her', 'Mr.', 'Mrs.', 'Lizzy', 'Collins']
-        funny = ['bonnet', 'ball', 'casks', 'ship', 'marry', 'marriage', 'marries', 'married', 'creature', 'sea']
+        funny = ['bonnet', 'ball', 'casks', 'ship', 'marry', 'marriage', 'marries', 'married', 'creature', 'sea', 'whale']
 
         verbs = ['is', 'was', 'had', 'has', 'have', 'said', 'cried', 'replied']
         
