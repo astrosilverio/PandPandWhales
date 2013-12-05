@@ -1,0 +1,170 @@
+Fish-Spears! In that case no town-crier would ever find her again.
+['N', 'V', 'N', 'I', 'N', 'D', 'J', 'M', 'R', 'V', 'P', 'N', '.']
+True
+
+Would be equally satisfied that the Jeroboam of Nantucket.
+['M', 'V', 'R', 'V', 'I', 'D', 'N', 'I', 'N', '.']
+True
+
+Teeth; in Wood; in Sheet-Iron; in Stone; in Mountains; in Stars.
+['N', ':', 'I', 'N', ':', 'I', 'J', ':', 'I', 'N', ':', 'I', 'N', ':', 'I', 'N', '.']
+True
+
+Of Moby Dick.
+['I', 'N', 'N', '.']
+True
+ 
+Leave me because she saw Mr. Darcy they had gained.
+['N', 'P', 'I', 'P', 'V', 'N', 'N', 'P', 'V', 'V', '.']
+True
+
+The use of the Grand Turk's head; and then, what to him one morning at Meryton."
+['D', 'N', 'I', 'D', 'N', 'N', 'P', 'N', ':', 'C', 'R', ',', 'W', 'T', 'P', 'C', 'V', 'I', 'N', '.', "'"]
+
+Of Moby Dick; for he must abominate and despise, and where he was admitted into her room to prepare.
+['I', 'N', 'N', ':', 'I', 'P', 'M', 'V', 'C', 'V', ',', 'C', 'W', 'P', 'V', 'V', 'I', 'P', 'N', 'T', 'V', '.']
+
+Physical or metaphysical point of perch is the subtle moisture thrown off by sunrise, I guess; let's see."
+['J', 'C', 'J', 'N', 'I', 'N', 'V', 'D', 'N', 'N', 'N', 'I', 'I', 'N', ',', 'P', 'V', ':', 'V', 'V', 'V', '.', "'"]
+
+For the sentiments of either, would be surrounded by circle upon circle of everlasting December, bid defiance to all drunken tars.
+['I', 'D', 'N', 'I', 'D', ',', 'M', 'V', 'V', 'I', 'N', 'I', 'N', 'I', 'V', 'N', ',', 'N', 'N', 'T', 'D', 'N', 'N', '.']
+
+Is for the present.--Perhaps
+['V', 'I', 'D', 'N', ':', 'N']
+  
+By Herman Melville This eBook is for the pall-bearers.
+['I', 'N', 'N', 'N', 'N', 'V', 'I', 'D', 'N', '.']
+
+Whale, for I have given me hope, and leaving his compliments for her mother.
+['N', ',', 'I', 'P', 'V', 'V', 'P', 'V', ',', 'C', 'V', 'P', 'N', 'I', 'P', 'J', '.']
+
+My lads, let your hearts never fail, While the mate uttered his command.
+['P', 'N', ',', 'V', 'P', 'N', 'R', 'V', ',', 'I', 'D', 'N', 'V', 'P', 'N', '.']
+True
+> 
+Funny?  
+Learnt, I should be able to keep or quit it on deck, and looked and spoke with affectionate praise of me for the most distant clump.
+['N', ',', 'P', 'M', 'V', 'J', 'T', 'V', 'C', 'V', 'P', 'I', 'N', ',', 'C', 'V', 'C', 'N', 'I', 'J', 'N', 'I', 'P', 'I', 'D', 'J', 'J', 'N', '.']
+True
+> 
+Funny?  
+--Opening SENTENCE OF HOBBES'S LEVIATHAN.
+[':', 'V', 'N', 'N', 'N', 'P', 'N', '.']
+True
+> 
+Funny?  
+Of Moby Dick.
+['I', 'N', 'N', '.']
+True
+> 
+Funny?  
+I'Ve--" "Faith? What's that?" "Why, faith, sir, it's only a loose network of volunteer support.
+['J', ':', "'", '`', 'N', '.', 'W', 'V', 'I', '.', "'", '`', 'W', ',', 'I', ',', 'N', ',', 'P', 'V', 'R', 'D', 'N', 'N', 'I', 'N', 'N', '.']
+True
+> 
+Funny?  
+Ever dusting his old intense whisper--"Give way, greyhounds! Dog to it!" "I tell ye what it is.
+['R', 'V', 'P', 'J', 'N', 'N', ':', "'", 'N', 'N', ',', 'N', '.', 'N', 'T', 'P', '.', "'", '`', 'P', 'V', 'J', 'W', 'P', 'V', '.']
+True
+> 
+Funny?  
+By Herman Melville *** END OF THE SUMMER ISLANDS.
+['I', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', '.']
+True
+> 
+Funny?  
+Application FOR THE PURPOSE OF EXTENDING THE SPERMACETI WHALE FISHERY.
+['N', 'I', 'D', 'N', 'N', 'N', 'N', 'N', 'N', 'N', '.']
+True
+> 
+Funny?  
+Of Moby Dick.
+['I', 'N', 'N', '.']
+True
+> 
+Funny?  
+(Merry'S the play); a full ship and kept muttering it all over, with a milky-white head and body seem to be Lady Catherine's drawing-room.
+['N', 'N', 'P', 'D', 'N', ':', ':', 'D', 'J', 'N', 'C', 'V', 'V', 'P', 'D', 'I', ',', 'I', 'D', 'J', 'N', 'C', 'N', 'V', 'T', 'V', 'N', 'N', 'P', 'J', '.']
+True
+> 
+Funny?  
+Mate, as upon the ship's side--about half way down the topmaul: "a white whale.
+['N', ',', 'I', 'I', 'D', 'N', 'P', 'N', ':', 'I', 'P', 'N', 'I', 'D', 'N', ':', '`', 'D', 'J', 'N', '.']
+True
+> 
+Funny?  
+If is not to try to: ain't one limb enough? What should I do not agree to abide by all means.
+['I', 'V', 'R', 'T', 'V', 'T', ':', 'N', 'R', 'C', 'N', 'R', '.', 'W', 'M', 'P', 'V', 'R', 'V', 'T', 'V', 'I', 'D', 'N', '.']
+True
+> 
+Funny?  
+White skin, white liver! SPANISH SAILOR (MEETING HIM).
+['N', 'N', ',', 'J', 'N', '.', 'N', 'N', 'N', 'N', 'N', 'N', '.']
+True
+> 
+Funny?  
+Their teeth, of which officers Mr. Wickham was as infallibly going West.
+['P', 'N', ',', 'I', 'W', 'N', 'N', 'N', 'V', 'I', 'R', 'V', 'N', '.']
+True
+> 
+Funny?  
+Go!" cried Stubb to his comrades.
+['N', ':', "'", 'V', 'N', 'T', 'P', 'N', '.']
+True
+> 
+Funny?  
+Of Moby Dick; or The Whale as much as you deserve."
+['I', 'N', 'N', ':', 'C', 'D', 'N', 'I', 'J', 'I', 'P', 'V', '.', "'"]
+True
+> 
+Funny?  
+In coat, heart, body, and had Mr. Wickham himself?" "No; he never cared three straws about her.
+['I', 'J', ',', 'N', ',', 'N', ',', 'C', 'V', 'N', 'N', 'P', '.', "'", '`', 'D', ':', 'P', 'R', 'V', 'C', 'N', 'I', 'P', '.']
+True
+> 
+Funny?  
+And with a hooked, Roman bill sublime.
+['C', 'I', 'D', 'V', ',', 'N', 'N', 'N', '.']
+True
+> 
+Funny?  
+To The University of Adelaide Library for preserving the utmost importance to mention, that however baby man may be the weaker side.
+['T', 'D', 'N', 'I', 'N', 'N', 'I', 'V', 'D', 'J', 'N', 'T', 'N', ',', 'I', 'R', 'J', 'N', 'M', 'V', 'D', 'N', 'N', '.']
+True
+> 
+Funny?  
+Brother-In-Law'S intreaty that she and her expectations of felicity, to be Bingley.
+['N', 'P', 'N', 'I', 'P', 'C', 'P', 'N', 'I', 'N', ',', 'T', 'V', 'N', '.']
+True
+> 
+Funny?  
+Poor devil of a shudder! Future things swim before me, as I have always supposed it to the altar ere long."
+['N', 'N', 'I', 'D', 'N', '.', 'N', 'N', 'V', 'I', 'P', ',', 'I', 'P', 'V', 'R', 'V', 'P', 'T', 'D', 'N', 'R', 'J', '.', "'"]
+True
+> 
+Funny?  
+To The University of Adelaide Library for preserving the utmost civility, and they have gone so soon."
+['T', 'D', 'N', 'I', 'N', 'N', 'I', 'V', 'D', 'J', 'N', ',', 'C', 'P', 'V', 'V', 'R', 'R', '.', "'"]
+True
+> 
+Funny?  
+A WHALE.
+['D', 'N', '.']
+True
+> 
+Funny?  
+Human hair; and one of that sort of frightful hot, as though escaping from the Pequod.
+['N', 'N', ':', 'C', 'C', 'I', 'D', 'N', 'I', 'J', 'N', ',', 'I', 'I', 'N', 'I', 'D', 'N', '.']
+True
+> 
+Funny?  
+Me--Not a base as that, Flask seemed a gulf impassable between them.
+['P', ':', 'R', 'D', 'N', 'I', 'D', ',', 'N', 'V', 'D', 'N', 'J', 'I', 'P', '.']
+True
+> 
+Funny?  
+The use of Project Gutenberg-tm works unless you receive specific permission.
+['D', 'N', 'I', 'N', 'N', 'V', 'I', 'P', 'V', 'J', 'N', '.']
+True
+> 
