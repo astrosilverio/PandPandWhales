@@ -1,88 +1,190 @@
 import random
 import string
 from itertools import izip
-from collections import defaultdict
+from collections import defaultdict, Counter
 import nltk
 import pdb
+import math
 
 class Markov(object):
 
+    LOW_NUMBER = 1e-5
+
     def __init__(self, source_text):
-        self.two_seeds = defaultdict(list)
-        self.source_text = source_text
-        self.corpus = self.source_text.read()
-        self.words = self.corpus.split()
-        self.uppercases = {word for word in self.words if word.istitle()}
-        self.propers = self.get_propers()
-        self.make_chains()
+        self.corpus = self.get_sentences(source_text)
+        self.unigrams = self.make_unigrams()
+        self.bigram_freqs = self.make_bigram_counts_dict()
+        self.bigrams = self.make_bigrams(self.bigram_freqs)
+        self.trigram_freqs = self.make_trigram_counts_dict()
+        self.trigrams = self.make_trigrams(self.trigram_freqs)
         
+    def get_sentences(self, fn):
+        with open(fn) as f:
+            out = f.readlines()
+            out = [["**Beginning**"] + line.strip().split() + ["**End**"] for line in out]
+        return out
         
-    def get_propers(self):
+    def make_unigrams(self):
+        out = defaultdict(lambda: self.LOW_NUMBER)
+        counts = Counter()
+        for sent in self.corpus:
+            for cur in sent:
+                counts[cur] += 1
+        total_words = sum(counts.values())
+        for word, count in counts.items():
+            out[word] = count / float(total_words)
+        return out
+        
+    def make_bigram_counts_dict(self):
+        counts_dict = defaultdict(Counter)
+        for sent in self.corpus:
+            for (prev, cur) in izip(sent, sent[1:]):
+                counts_dict[prev][cur] += 1
+        return counts_dict
+            
+    def make_bigrams(self, counts_dict):
+        out = defaultdict(lambda: defaultdict(lambda: self.LOW_NUMBER))
+        for prev in counts_dict:
+            for cur in counts_dict[prev]:
+                out[prev][cur] = counts_dict[prev][cur] / float(sum(counts_dict[prev].values()))
+        return out
+                                
+    def make_trigram_counts_dict(self):
+        counts_dict = defaultdict(Counter)
+        for sent in self.corpus:
+            for (prev_prev, prev, cur) in izip(sent, sent[1:], sent[2:]):
+                counts_dict[(prev_prev, prev)][cur] += 1
+        return counts_dict
+        
+    def make_trigrams(self, counts_dict):
+        out = defaultdict(lambda: defaultdict(lambda: self.LOW_NUMBER))
+        for (w1, w2) in counts_dict:
+            for cur in counts_dict[(w1, w2)]:
+                out[(w1, w2)][cur] = counts_dict[(w1, w2)][cur] / float(sum(counts_dict[(w1, w2)].values()))
+        return out
+        
+    def choose_word(self, word_dist):
+        score = random.random()    
+        for word, prob in word_dist.items():
+            if score < prob:
+                return word
+            score -= prob
+        return False
+         
+    def make_bigram_sentence(self, bigram_probs_dict=None):
+        if not bigram_probs_dict:
+            bigram_probs_dict = self.bigrams
+        prev = "**Beginning**"
+        out = []
+        while True:
+            cur = self.choose_word(bigram_probs_dict[prev])
+            if cur == "**End**":
+                return " ".join(out)
+            out.append(cur)
+            prev = cur
+        return False
+        
+    def make_trigram_sentence(self, trigram_probs_dict=None):
+        if not trigram_probs_dict:
+            trigram_probs_dict = self.trigrams
+        w1 = "**Beginning**"
+        w2 = self.choose_word(self.bigrams[w1])
+        out = [w2]
+        while True:
+            cur = self.choose_word(trigram_probs_dict[(w1, w2)])
+            if cur == "**End**":
+                return out
+            out.append(cur)
+            w1, w2 = w2, cur
+        return False
+
+    def score_sentence(self, sent, trigram_probs=None, bigram_probs=None, unigram_probs=None):
+        if not trigram_probs:
+            trigram_probs = self.trigrams
+        if not bigram_probs:
+            bigram_probs = self.bigrams
+        if not unigram_probs:
+            unigram_probs = self.unigrams
+        total_surprise = 0
+        sent = ["**Beginning**"] + sent + ["**End**"]
+        for w1, w2, cur in izip(sent, sent[1:], sent[2:]):
+            if (w1, w2) in trigram_probs and cur in trigram_probs[(w1, w2)]:
+                surprise = -math.log(trigram_probs[(w1, w2)][cur], 2)
+            elif w2 in bigram_probs and cur in bigram_probs[w2]:
+                prob = 0.4 * bigram_probs[w2][cur]
+                surprise = -math.log(prob, 2)
+            else:
+                prob = 0.4 * 0.4 * unigram_probs[cur]
+                surprise = -math.log(prob, 2)
+            total_surprise += surprise
+        total_surprise /= (len(sent) - 2)
+        return total_surprise
+
+class DoubleMarkov(Markov):
+
+    LOW_NUMBER = 1e-7
+
+    def __init__(self, text_one, text_two):
+        self.text_one = text_one
+        self.text_two = text_two
+        self.corpus = self.text_one.corpus + self.text_two.corpus
+        self.unigrams = self.make_unigrams()
+        self.bigram_freqs = self.make_bigram_counts_dict()
+        self.bigrams = self.make_bigrams(self.bigram_freqs)
+        self.trigram_freqs = self.make_trigram_counts_dict()
+        self.trigrams = self.make_trigrams(self.trigram_freqs)        
+        
+    def get_propers(self, text):
 
         table = string.maketrans("","")
-        no_punct = self.corpus.translate(table, string.punctuation)
+        no_punct = text.translate(table, string.punctuation)
         words = set(no_punct.split())
         uppercases = {word.lower() for word in words if word.istitle()}
         propers = uppercases - words
         propers = {word.title() for word in propers}
         return propers
-                    
-    def make_chains(self):
 
-        for w1, w2, w3 in izip(self.words, self.words[1:], self.words[2:]):
-            key = (w1, w2)
-            self.two_seeds[key].append(w3)
-                
-    def make_text(self):
-        
-        prefixes = ['Mr.', 'Mrs.']
-        starters = self.uppercases & self.propers
-        start = random.choice(self.words)
-        while start.find('.') != -1:
-            start = random.choice(self.words)
-
-        seed = self.words.index(start)
-        w1, w2 = self.words[seed], self.words[seed + 1]        
-        gen_words = [w1.title(), w2]
-        
-        while w2.find('.') == -1 or w2 in prefixes:
-            w1, w2 = w2, random.choice(self.two_seeds[(w1, w2)])
-            gen_words.append(w2)
-            
-        return ' '.join(gen_words)
-        
     def is_sentence(self, sentence):
     
         valid_sent = False
-        sent_structures = [['N', 'V', 'N'], ['N', 'D', 'N'], ['P', 'V', 'N'], ['P', 'D', 'N']]
-        pos = [p[0] for w, p in nltk.pos_tag(nltk.word_tokenize(sentence))]
-        print pos
-        for structure in sent_structures:
-            if valid_sent == True:
-                return valid_sent
-            s = []
-            for i in range(3):
-                try:
-                    s.append(pos.index(structure[i]))
-                    pos.remove(structure[i])
-                except:
-                    continue
-            valid_sent = sorted(s) == s
-
+        pos = [p[0] for w, p in nltk.pos_tag(sentence)]
+        for p1, p2 in izip(pos, pos[1:]):
+            if (p1, p2) == ('N', 'V'):
+                valid_sent = True
         return valid_sent
+        
+    def is_from_both_texts(self, sentence):
+    
+        one = False
+        two = False
+        for w1, w2 in izip(sentence, sentence[1:]):
+            if w2 in self.text_one.bigrams[w1]:
+                one = True
+            if w2 in self.text_two.bigrams[w1]:
+                two = True
+
+        both = one and two
+        return both
         
         
     def make_tweet(self, length_weight = 0.25, name_weight = 1.0, fun_weight = 0.5, sentence_weight = 3.5):
     
         funny = ['bonnet', 'ball', 'casks', 'ship', 'marry', 'marriage', 'marries', 'married', 'creature', 'sea', 'whale']
 
-        tweet = self.make_text()
+        tweet = self.make_trigram_sentence()
+        sent = self.is_sentence(tweet)
+        both = self.is_from_both_texts(tweet)
+        tweet = " ".join(tweet)
+        
+        amusing = len(tweet)/140. + sent + both
+                   
+        while len(tweet) > 140 or amusing < 1.0:
+            tweet = self.make_trigram_sentence()
+            sent = self.is_sentence(tweet)
+            both = self.is_from_both_texts(tweet)
+            tweet = " ".join(tweet)
+            amusing = len(tweet)/140. + sent + both
 
-
-                    
-        amusing = len(tweet)/140. * 0.25 + len([name for name in self.propers if tweet.count(name)]) + len([thing for thing in funny if tweet.count(thing)]) * 0.5
-        while len(tweet) > 140 or amusing < 2:
-            tweet = self.make_text()
-            amusing = len(tweet)/140. * 0.25 + len([name for name in self.propers if tweet.count(name)]) + len([thing for thing in funny if tweet.count(thing)]) * 0.5
+        print amusing, len(tweet), sent, both
         return tweet
         

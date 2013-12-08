@@ -168,3 +168,812 @@ The use of Project Gutenberg-tm works unless you receive specific permission.
 ['D', 'N', 'I', 'N', 'N', 'V', 'I', 'P', 'V', 'J', 'N', '.']
 True
 > 
+
+Boat; himself and boat's crew remained untainted, and though in the evening at Rosings.
+['N', ':', 'P', 'C', 'V', 'V', 'J', 'V', 'V', ',', 'C', 'I', 'I', 'D', 'N', 'I', 'N', '.']
+False
+
+
+Office for the Fejee that salted down a live tree, and you will not be too particular.
+['N', 'I', 'D', 'N', 'I', 'V', 'I', 'D', 'J', 'N', ',', 'C', 'P', 'M', 'R', 'V', 'R', 'J', '.']
+False
+
+
+Scruple whatever on that day I shall tell Colonel Forster it will be married!--I shall see her again."
+['N', 'N', 'I', 'D', 'N', 'P', 'M', 'V', 'N', 'N', 'P', 'M', 'V', 'V', '.', ':', 'P', 'M', 'V', 'P', 'R', '.', "'"]
+False
+
+
+To The University of Adelaide Library for preserving the utmost monster of the ship, which would now be renewed.
+['T', 'D', 'N', 'I', 'N', 'N', 'I', 'V', 'D', 'J', 'N', 'I', 'D', 'N', ',', 'W', 'M', 'R', 'V', 'V', '.']
+False
+
+
+Instant destruction;--'Stern all, for your nerves.
+['N', 'N', ':', ':', 'J', 'D', ',', 'I', 'P', 'N', '.']
+False
+
+
+O Jonah? Aye, well mightest thou fear the Lord Warden's."
+['N', 'N', '.', 'N', ',', 'R', 'J', 'P', 'R', 'D', 'N', 'N', 'P', '.', "'"]
+False
+
+
+His old grammars; it somehow into the Victory's plank where Nelson fell.
+['P', 'J', 'N', ':', 'P', 'V', 'I', 'D', 'N', 'P', 'N', 'W', 'N', 'V', '.']
+True
+
+
+Of Moby Dick, and his wild desire to enlarge the circle of my live flesh every way.
+['I', 'N', 'N', ',', 'C', 'P', 'N', 'N', 'T', 'V', 'D', 'N', 'I', 'P', 'J', 'N', 'D', 'N', '.']
+False
+
+
+From the book of Maccabees.
+['I', 'D', 'N', 'I', 'N', '.']
+False
+
+
+This: "GRAND CONTESTED ELECTION FOR THE PRESIDENCY OF THE POSSIBILITY OF SUCH DAMAGE.
+['D', ':', '`', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', '.']
+False
+
+
+Philistine a regular headsman in the character of Abjectus, or the Twins--that is, Virtue and Vice; we try to discover her.
+['N', 'D', 'J', 'N', 'I', 'D', 'N', 'I', 'N', ',', 'C', 'D', 'N', ':', 'I', 'V', ',', 'N', 'C', 'N', ':', 'P', 'V', 'T', 'V', 'P', '.']
+False
+
+
+A combination of etexts, one from his cheek he (Steelkilt) would murder him.
+['D', 'N', 'I', 'N', ',', 'C', 'I', 'P', 'N', 'P', ':', 'N', ':', 'M', 'V', 'P', '.']
+False
+
+
+Go, Ishmael, said I was now added that he was about, I don't believe in them.
+['N', ',', 'N', ',', 'V', 'P', 'V', 'R', 'V', 'I', 'P', 'V', 'I', ',', 'P', 'V', 'R', 'V', 'I', 'P', '.']
+False
+
+
+Might justly doubt, since the 26th of November, when we were speaking of Captain Noah, with copies of the unceasingly advancing keel.
+['N', 'R', 'N', ',', 'I', 'D', 'J', 'I', 'N', ',', 'W', 'P', 'V', 'V', 'I', 'N', 'N', ',', 'I', 'N', 'I', 'D', 'R', 'V', 'N', '.']
+False
+
+
+The Project Gutenberg Literary Archive Foundation.
+['D', 'N', 'N', 'N', 'N', 'N', '.']
+False
+
+
+Of Moby Dick as a fly is found glued in amber.
+['I', 'N', 'N', 'I', 'D', 'R', 'V', 'V', 'V', 'I', 'N', '.']
+False
+
+
+We substituted a capital L for the condescension, and I cannot believe it.
+['P', 'V', 'D', 'N', 'N', 'I', 'D', 'N', ',', 'C', 'P', 'M', 'R', 'V', 'P', '.']
+False
+
+
+Of Moby Dick; or The Whale, by Herman Melville *** END OF VOL.
+['I', 'N', 'N', ':', 'C', 'D', 'N', ',', 'I', 'N', 'N', 'N', 'N', 'N', 'N', '.']
+False
+
+
+The use of the boat, quickly brought his Ramadan was over.
+['D', 'N', 'I', 'D', 'J', ',', 'R', 'V', 'P', 'N', 'V', 'I', '.']
+True
+
+
+Dreadful gulf of this world an endless inclined plane! Hurrah! this is the best.
+['N', 'N', 'I', 'D', 'N', 'D', 'N', 'V', 'N', '.', 'N', '.', 'D', 'V', 'D', 'J', '.']
+True
+
+
+Just as we can," said Jane; "but I can't write; so I thought he won too many.
+['R', 'I', 'P', 'M', ',', "'", 'V', 'N', ':', '`', 'C', 'P', 'M', 'R', 'V', ':', 'R', 'P', 'V', 'P', 'V', 'R', 'J', '.']
+False
+
+
+Elizabeth, "that we shall not void the remaining tangles of the mouth.
+['N', ',', '`', 'I', 'P', 'M', 'R', 'V', 'D', 'V', 'N', 'I', 'D', 'N', '.']
+False
+
+
+Roused all my pains to go a-whaling, to find you reasonable; but depend upon it, till Kitty runs away."
+['V', 'D', 'P', 'N', 'T', 'V', 'J', ',', 'T', 'V', 'P', 'J', ':', 'C', 'V', 'I', 'P', ',', 'I', 'N', 'V', 'R', '.', "'"]
+True
+
+
+On, from the two Canallers rushed into the very heavens attest.
+['I', ',', 'I', 'D', 'C', 'N', 'V', 'I', 'D', 'J', 'N', 'V', '.']
+True
+
+
+Outside; a man of God, this pulpit, I see, is a deacon himself, Queequeg is."
+['J', ':', 'D', 'N', 'I', 'N', ',', 'D', 'N', ',', 'P', 'V', ',', 'V', 'D', 'N', 'P', ',', 'N', 'V', '.', "'"]
+True
+
+
+The use of his two unfeeling sisters and Mr. Bennet came from her friend; and their glorying crews all over with showers of foam.
+['D', 'N', 'I', 'P', 'C', 'V', 'N', 'C', 'N', 'N', 'V', 'I', 'P', 'N', ':', 'C', 'P', 'N', 'N', 'D', 'I', 'I', 'N', 'I', 'N', '.']
+True
+
+
+Project at Virginia Tech version.
+['N', 'I', 'N', 'N', 'N', '.']
+False
+
+
+Fatal one.
+['N', 'C', '.']
+False
+
+
+Rack (forming part of the "Advancement of Learning" you will not suffice.
+['N', ':', 'V', 'N', 'I', 'D', '`', 'N', 'I', 'N', "'", 'P', 'M', 'R', 'V', '.']
+False
+
+
+Idea, however wild, might not unreasonably awakened a suspicion of their flight dash themselves against the mark.
+['N', ',', 'R', 'J', ',', 'M', 'R', 'R', 'V', 'D', 'N', 'I', 'P', 'N', 'N', 'N', 'I', 'D', 'N', '.']
+False
+
+
+Of Moby Dick; though he so divinely swam.
+['I', 'N', 'N', ':', 'I', 'P', 'R', 'R', 'N', '.']
+False
+
+
+To The University of Adelaide Library for preserving the Virginia Tech and one way and that the whale as a flavorish thing to him.
+['T', 'D', 'N', 'I', 'N', 'N', 'I', 'V', 'D', 'N', 'N', 'C', 'C', 'N', 'C', 'I', 'D', 'N', 'I', 'D', 'J', 'N', 'T', 'P', '.']
+False
+
+
+Asking me to be imputed to my fond faith, poor Pip, in Alabama.
+['V', 'P', 'T', 'V', 'V', 'T', 'P', 'N', 'N', ',', 'J', 'N', ',', 'I', 'N', '.']
+False
+
+
+Romantic landscape in all whalers; but it was impossible to meet his doom, after the health of her own knowledge.
+['J', 'N', 'I', 'D', 'N', ':', 'C', 'P', 'V', 'J', 'T', 'V', 'P', 'N', ',', 'I', 'D', 'N', 'I', 'P', 'J', 'N', '.']
+False
+
+
+Traceback (most recent call last):
+  File "bot.py", line 16, in <module>
+    t = bot.make_tweet()
+  File "/Users/silverio/Documents/Work/hackerschool/PandPandWhales/markov.py", line 91, in make_tweet
+    both = self.is_from_both_texts(tweet)
+  File "/Users/silverio/Documents/Work/hackerschool/PandPandWhales/markov.py", line 77, in is_from_both_texts
+    book_one = set(words) & book_one_words
+NameError: global name 'book_one_words' is not defined
+dusty:PandPandWhales silverio$ python bot.py
+['P', 'R', '.']
+('Him now.', 1.0142857142857142)
+Traceback (most recent call last):
+  File "bot.py", line 18, in <module>
+    x = bot.is_sentence(t)
+  File "/Users/silverio/Documents/Work/hackerschool/PandPandWhales/markov.py", line 66, in is_sentence
+    pos = [p[0] for w, p in nltk.pos_tag(nltk.word_tokenize(sentence))]
+  File "/Users/silverio/anaconda/lib/python2.7/site-packages/nltk/tokenize/__init__.py", line 87, in word_tokenize
+    return _word_tokenize(text)
+  File "/Users/silverio/anaconda/lib/python2.7/site-packages/nltk/tokenize/treebank.py", line 67, in tokenize
+    text = re.sub(r'^\"', r'``', text)
+  File "/Users/silverio/anaconda/lib/python2.7/re.py", line 151, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or buffer
+dusty:PandPandWhales silverio$ python bot.py
+['J', ':', 'V', 'R', 'P', 'V', '.', 'P', 'V', 'P', ':', 'N', '.', "'"]
+('Last; don\'t you speak? It\'s I--Ishmael."', 3.0714285714285716)
+Traceback (most recent call last):
+  File "bot.py", line 18, in <module>
+    x = bot.is_sentence(t)
+  File "/Users/silverio/Documents/Work/hackerschool/PandPandWhales/markov.py", line 66, in is_sentence
+    pos = [p[0] for w, p in nltk.pos_tag(nltk.word_tokenize(sentence))]
+  File "/Users/silverio/anaconda/lib/python2.7/site-packages/nltk/tokenize/__init__.py", line 87, in word_tokenize
+    return _word_tokenize(text)
+  File "/Users/silverio/anaconda/lib/python2.7/site-packages/nltk/tokenize/treebank.py", line 67, in tokenize
+    text = re.sub(r'^\"', r'``', text)
+  File "/Users/silverio/anaconda/lib/python2.7/re.py", line 151, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or buffer
+dusty:PandPandWhales silverio$ python bot.py
+['N', 'V', 'T', 'P', ',', 'N', 'N', ':', 'N', 'N', 'N', 'P', ',', 'V', 'I', 'W', 'N', 'V', 'I', 'N', ',', 'P', 'V', '`', 'R', 'J', ':', "'", 'C', 'R', 'C', 'N', 'V', 'I', 'N', 'P', 'N', '.']
+Floats out from the sea, was chained up and says, 'I want John.' 4.61428571429
+Floats out from the sea, was chained up and says, 'I want John.'
+['N', 'I', 'I', 'D', 'N', ',', 'V', 'V', 'R', 'C', 'V', ',', 'N', 'N', 'N', '.', "'"]
+False
+False
+
+^[[A
+['N', 'V', 'D', 'J', 'N', 'I', 'V', 'I', 'N', ',', ':', 'I', 'P', 'V', 'P', 'V', 'I', 'P', 'N', 'I', 'N', 'T', 'D', 'N', 'I', 'V', 'P', '.']
+Had prepared a great fool for going as cook,--though I confess myself surprised by your obstinacy in adhering to the honour of seeing him. 2.24642857143
+Had prepared a great fool for going as cook,--though I confess myself surprised by your obstinacy in adhering to the honour of seeing him.
+['N', 'V', 'D', 'J', 'N', 'I', 'V', 'I', 'N', ',', ':', 'I', 'P', 'V', 'P', 'V', 'I', 'P', 'N', 'I', 'N', 'T', 'D', 'N', 'I', 'V', 'P', '.']
+True
+False
+
+
+['N', 'V', 'N', 'D', 'J', 'J', 'N', 'P', 'V', '.']
+Nor was Stubb the only fresh fare they had. 3.07678571429
+Nor was Stubb the only fresh fare they had.
+['N', 'V', 'N', 'D', 'J', 'J', 'N', 'P', 'V', '.']
+True
+False
+
+
+['D', 'N', 'I', 'C', 'D', 'D', 'J', 'I', 'D', 'N', ',', 'C', 'D', 'J', 'N', 'N', 'V', 'D', 'N', 'V', '.']
+The use of and all the eclat of a King, and the studded iron-bound cask followed the servants remained. 0.183928571429
+The use of and all the eclat of a King, and the studded iron-bound cask followed the servants remained.
+['D', 'N', 'I', 'C', 'D', 'D', 'J', 'I', 'D', 'N', ',', 'C', 'D', 'J', 'N', 'N', 'V', 'D', 'N', 'V', '.']
+True
+False
+
+
+['`', 'J', 'N', "'", ':', ',', 'P', 'V', 'T', 'V', 'R', 'V', 'I', 'I', 'C', 'N', 'I', 'D', ',', 'M', 'V', 'R', 'V', '.']
+"Project Gutenberg"), you agree to be always flying about from one carriage into another, might be so called. 2.19464285714
+"Project Gutenberg"), you agree to be always flying about from one carriage into another, might be so called.
+['`', 'J', 'N', "'", ':', ',', 'P', 'V', 'T', 'V', 'R', 'V', 'I', 'I', 'C', 'N', 'I', 'D', ',', 'M', 'V', 'R', 'V', '.']
+False
+False
+
+
+['D', 'N', 'I', 'N', 'R', 'I', 'D', 'J', 'N', ',', 'N', 'C', 'V', 'N', 'I', 'C', 'N', 'T', 'C', 'V', 'N', 'N', 'N', 'I', 'R', 'C', 'V', 'J', ',', 'I', 'D', 'N', ',', 'R', 'I', 'T', 'V', 'P', 'J', 'I', 'D', 'N', '.']
+A combination of etexts, one from the front. 0.0785714285714
+A combination of etexts, one from the front.
+['D', 'N', 'I', 'N', ',', 'C', 'I', 'D', 'N', '.']
+False
+False
+
+
+['N', 'V', 'C', 'N', 'I', 'D', 'N', '.']
+Did afford 500 weight of the capture. 0.0660714285714
+Did afford 500 weight of the capture.
+['N', 'V', 'C', 'N', 'I', 'D', 'N', '.']
+True
+False
+
+
+['N', 'N', ':', 'C', 'V', 'N', ',', 'P', 'N', '.']
+Upon tears; and say something, my hearties. 1.07678571429
+Upon tears; and say something, my hearties.
+['N', 'N', ':', 'C', 'V', 'N', ',', 'P', 'N', '.']
+False
+False
+
+
+['R', 'T', 'P', 'N', 'P', 'N', 'I', 'V', 'I', 'D', 'J', 'N', ':', 'P', 'M', 'V', 'N', 'I', 'D', 'I', 'P', 'V', 'N', 'P', 'V', 'V', 'D', 'R', 'V', 'J', 'N', ':', 'C', 'P', 'V', 'R', 'V', 'N', 'I', 'D', 'W', 'N', 'P', 'V', 'R', 'T', 'V', 'V', 'I', 'I', 'D', 'N', 'V', 'V', 'J', '.']
+Now dimmed, was the windlass. 1.05178571429
+Now dimmed, was the windlass.
+['R', 'V', ',', 'V', 'D', 'N', '.']
+False
+False
+
+
+['J', 'N', ',', 'V', 'N', 'I', 'N', 'I', 'N', 'V', 'T', 'V', 'V', 'I', 'D', 'N', 'P', 'N', 'V', 'D', 'N', 'N', 'V', 'N', ',', 'D', 'N', 'N', ',', 'I', 'P', 'N', ':', 'D', 'N', 'V', 'R', 'C', 'J', ',', 'C', 'I', 'P', 'V', 'R', 'N', 'N', 'I', 'N', ',', "'", 'P', 'M', 'V', ':', 'D', 'N', 'V', 'R', 'I', 'V', '.']
+Black faces turned round in their hasty zeal to befriend him, and oars came loudly into play. 0.166071428571
+Black faces turned round in their hasty zeal to befriend him, and oars came loudly into play.
+['N', 'N', 'V', 'N', 'I', 'P', 'N', 'N', 'T', 'V', 'P', ',', 'C', 'N', 'V', 'R', 'I', 'N', '.']
+True
+False
+
+
+['D', 'N', 'I', 'N', ',', 'C', 'I', 'P', 'R', 'V', 'N', '.']
+A combination of etexts, one from his tightly clenched hand. 0.107142857143
+A combination of etexts, one from his tightly clenched hand.
+['D', 'N', 'I', 'N', ',', 'C', 'I', 'P', 'R', 'V', 'N', '.']
+False
+False
+
+
+['J', 'C', 'D', 'N', 'I', 'D', 'N', 'N', 'V', 'P', '.']
+Most and the door of the English Captain hailed him. 3.09285714286
+Most and the door of the English Captain hailed him.
+['J', 'C', 'D', 'N', 'I', 'D', 'N', 'N', 'V', 'P', '.']
+True
+False
+
+
+['N', ',', 'C', 'V', 'P', 'R', 'N', ':', 'N']
+Questions, but answered them very composedly.--Lady 1.09107142857
+Questions, but answered them very composedly.--Lady
+['N', ',', 'C', 'V', 'P', 'R', 'N', ':', 'N']
+False
+False
+
+
+['N', ':', 'D', 'V', 'I', 'W', 'P', 'M', 'V', 'V', 'D', 'N', 'I', 'D', 'N', ':', 'P', 'M', 'V', 'C', 'N', 'I', 'P', 'N', 'I', 'N', 'C', 'N', ':', 'I', 'N', 'N', 'P', 'J', 'N', '.']
+And with some cautiousness dropt it to furnish to the assault. 0.110714285714
+And with some cautiousness dropt it to furnish to the assault.
+['C', 'I', 'D', 'N', 'N', 'P', 'T', 'V', 'T', 'D', 'N', '.']
+False
+False
+
+
+['N', 'V', 'T', 'V', 'P', 'V', '.']
+Ahab is to keep himself awake. 1.05357142857
+Ahab is to keep himself awake.
+['N', 'V', 'T', 'V', 'P', 'V', '.']
+True
+False
+
+
+['R', 'R', 'V', 'I', 'D', 'J', 'N', 'V', 'V', 'P', 'T', 'V', 'P', 'I', 'D', 'N', 'J', 'N', 'I', 'P', 'N', ',', 'V', 'I', 'D', 'N', 'I', 'D', 'N', 'V', 'R', 'J', ',', 'I', 'J', 'J', 'I', 'P', 'E', ':', 'P', 'N', ',', 'R', ',', 'V', 'R', 'R', 'R', ',', 'V', 'P', 'D', 'N', 'I', 'N', 'N', 'P', 'P', 'N', 'C', 'J', 'N', ',', 'V', 'P', 'R', 'V', 'P', '.']
+Of Moby Dick. 3.02321428571
+Of Moby Dick.
+['I', 'N', 'N', '.']
+False
+False
+
+
+['R', 'V', ',', 'V', 'D', 'N', 'I', 'D', 'J', 'V', 'J', 'N', ':', 'R', 'N', 'I', 'D', 'J', 'N', '.', "'"]
+Now dimmed, was the cry of any other leading personal characteristics; yet nothing of any other man." 1.18035714286
+Now dimmed, was the cry of any other leading personal characteristics; yet nothing of any other man."
+['R', 'V', ',', 'V', 'D', 'N', 'I', 'D', 'J', 'V', 'J', 'N', ':', 'R', 'N', 'I', 'D', 'J', 'N', '.', "'"]
+False
+False
+
+
+['N', 'P', 'R', 'I', 'J', 'N', 'R', 'V', 'I', 'N', 'C', 'V', 'R', 'N', 'N', 'N', 'M', 'V', 'I', 'N', '.', "'", 'N', 'C', '.']
+Let us now with open jaws sluggishly swam through libraries and sailed over numberless unknown worlds must empty into thee!" CHAPTER 128. 5.24464285714
+Let us now with open jaws sluggishly swam through libraries and sailed over numberless unknown worlds must empty into thee!" CHAPTER 128.
+['N', 'P', 'R', 'I', 'J', 'N', 'R', 'V', 'I', 'N', 'C', 'V', 'R', 'N', 'N', 'N', 'M', 'V', 'I', 'N', '.', "'", 'N', 'C', '.']
+False
+False
+
+
+['C', 'I', 'D', 'J', 'C', 'J', '.']
+And with a sailor-belt and sheath-knife. 0.0714285714286
+And with a sailor-belt and sheath-knife.
+['C', 'I', 'D', 'J', 'C', 'J', '.']
+False
+False
+
+
+['N', 'V', 'T', 'D', 'N', 'I', 'N', 'N', 'I', 'V', 'D', 'N', 'N', 'N', '.']
+Are indebted to The University of Adelaide Library for preserving the Virginia Tech version. 8.16428571429
+Are indebted to The University of Adelaide Library for preserving the Virginia Tech version.
+['N', 'V', 'T', 'D', 'N', 'I', 'N', 'N', 'I', 'V', 'D', 'N', 'N', 'N', '.']
+True
+False
+
+
+['D', 'N', 'I', 'D', 'N', 'I', 'N', 'V', 'N', 'D', 'J', '.']
+The use of the people on deck rushed towards the boat. 0.0964285714286
+The use of the people on deck rushed towards the boat.
+['D', 'N', 'I', 'D', 'N', 'I', 'N', 'V', 'N', 'D', 'J', '.']
+True
+False
+
+
+['N', 'V', 'R', 'R', 'V', ':', 'C', 'I', 'P', 'J', 'N', 'N', ',', 'V', 'R', 'D', 'N', 'T', 'P', 'N', ',', '`', 'P', 'M', 'V', 'I', 'N', 'V', 'P', '.']
+Partridges were remarkably well done; and though his own royal pen, took down the words to her mother, "I would by that time eluded him. 2.24285714286
+Partridges were remarkably well done; and though his own royal pen, took down the words to her mother, "I would by that time eluded him.
+['N', 'V', 'R', 'R', 'V', ':', 'C', 'I', 'P', 'J', 'N', 'N', ',', 'V', 'R', 'D', 'N', 'T', 'P', 'N', ',', '`', 'P', 'M', 'V', 'I', 'N', 'V', 'P', '.']
+True
+False
+
+
+['I', 'R', 'I', 'D', 'J', 'N', 'I', 'P', 'N', '.']
+So much as the first fortnight of her heart. 0.0785714285714
+So much as the first fortnight of her heart.
+['I', 'R', 'I', 'D', 'J', 'N', 'I', 'P', 'N', '.']
+False
+False
+
+
+['N', 'V', 'I', 'D', 'N', 'V', 'T', 'P', ',', 'W', 'P', 'V', 'R', ',', 'P', 'M', 'V', 'V', 'R', 'R', 'I', 'P', ',', 'I', ',', 'I', 'D', 'N', 'W', 'I', 'P', 'N', ':', 'C', 'I', 'D', 'N', ':', 'C', 'T', 'W', 'D', 'N', 'P', 'M', 'V', 'D', 'C', 'I', 'D', 'J', 'N', 'V', 'R', 'V', 'I', 'P', 'V', '.', 'P', 'M', 'V', ',', 'W', 'V', 'V', 'P', 'V', 'I', 'P', 'N', ',', 'C', ',', 'I', 'N', 'D', 'D', 'N', 'N', 'V', 'R', 'V', 'I', 'D', 'R', 'J', 'N', 'T', 'P', 'N', ',', 'V', 'R', 'I', 'P', 'N', '.']
+By Herman Melville *** END OF THE DISSECTION OF A WHALING CRUIZE. 12.1160714286
+By Herman Melville *** END OF THE DISSECTION OF A WHALING CRUIZE.
+['I', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', '.']
+False
+False
+
+
+['D', 'N', 'I', 'N', ',', 'C', 'I', 'D', 'N', '.']
+A combination of etexts, one from the whale. 0.578571428571
+A combination of etexts, one from the whale.
+['D', 'N', 'I', 'N', ',', 'C', 'I', 'D', 'N', '.']
+False
+False
+
+
+['N', 'I', 'D', 'N', '.']
+Lands on the Battery. 1.0375
+Lands on the Battery.
+['N', 'I', 'D', 'N', '.']
+False
+False
+
+
+['D', 'N', 'I', 'N', 'N', 'N', ':', 'D', 'N', 'I', 'D', 'R', 'N', '.']
+The use of Project Gutenberg-tm work (any work on a lonely foot. 2.11428571429
+The use of Project Gutenberg-tm work (any work on a lonely foot.
+['D', 'N', 'I', 'N', 'N', 'N', ':', 'D', 'N', 'I', 'D', 'R', 'N', '.']
+False
+False
+
+
+['N', 'I', 'D', 'J', 'V', 'J', 'N', ':', 'R', 'N', 'I', 'D', 'N', 'T', 'P', 'I', 'R', 'V', 'R', '.', "'"]
+Can in any other leading personal characteristics; yet nothing of the library to myself as quite fixed here." 0.194642857143
+Can in any other leading personal characteristics; yet nothing of the library to myself as quite fixed here."
+['N', 'I', 'D', 'J', 'V', 'J', 'N', ':', 'R', 'N', 'I', 'D', 'N', 'T', 'P', 'I', 'R', 'V', 'R', '.', "'"]
+False
+False
+
+
+['C', 'I', 'D', 'N', 'T', 'V', 'N', '.']
+And with a bow to shattered stern. 0.0607142857143
+And with a bow to shattered stern.
+['C', 'I', 'D', 'N', 'T', 'V', 'N', '.']
+False
+False
+
+
+['C', 'I', 'D', 'N', 'N', 'I', 'N', ',', 'N', ',', 'C', 'N', '.']
+And with a locker underneath for umbrellas, comforters, and coats. 0.117857142857
+And with a locker underneath for umbrellas, comforters, and coats.
+['C', 'I', 'D', 'N', 'N', 'I', 'N', ',', 'N', ',', 'C', 'N', '.']
+False
+False
+
+
+['J', ',', 'I', 'P', 'N', ',', 'D', 'N', 'I', 'V', 'I', 'N', 'P', ':', 'C', 'N', 'I', 'D', 'C', 'N', ',', 'C', 'D', 'R', 'J', 'N', ':', 'R', 'T', 'C', 'V', 'D', 'D', 'N', ',', 'C', 'R', 'V', 'R', 'J', 'N', 'I', 'D', 'N', 'N', 'R', 'C', 'N', 'I', 'N', 'P', 'N', 'I', 'D', 'J', 'N', 'W', 'V', 'P', 'I', ',', 'P', 'M', 'R', 'R', 'V', 'I', 'P', '.']
+More immediately from the table, the hint of this: that from the pewter. 1.12857142857
+More immediately from the table, the hint of this: that from the pewter.
+['J', 'R', 'I', 'D', 'N', ',', 'D', 'N', 'I', 'D', ':', 'I', 'I', 'D', 'N', '.']
+False
+False
+
+
+['T', 'D', 'N', 'I', 'N', 'N', 'I', 'V', 'D', 'N', 'N', 'C', 'C', 'I', 'D', 'N', 'I', 'P', 'N', 'M', 'V', 'C', 'R', 'V', 'I', 'P', ':', 'C', 'P', 'R', 'V', 'W', 'P', 'N', 'V', 'V', 'J', ',', 'C', 'W', 'J', 'N', 'V', 'V', 'V', 'I', 'P', ':', 'N', 'P', ',', 'P', 'J', 'N', '.']
+Among which it had hardly courage to speak another word. 0.1
+Among which it had hardly courage to speak another word.
+['I', 'W', 'P', 'V', 'R', 'N', 'T', 'V', 'D', 'N', '.']
+False
+False
+
+
+['C', 'I', 'J', 'J', 'J', 'N', '.', "'", '`', 'P', 'V', 'D', 'R', 'J', 'N', '.', "'"]
+But with such perfect good breeding!" "He is a very happy woman." 1.11607142857
+But with such perfect good breeding!" "He is a very happy woman."
+['C', 'I', 'J', 'J', 'J', 'N', '.', "'", '`', 'P', 'V', 'D', 'R', 'J', 'N', '.', "'"]
+False
+False
+
+
+['V', 'D', 'N', ',', 'R', 'V', 'N', ',', 'C', 'V', 'T', 'P', 'W', 'J', 'N', 'R', 'V', 'V', 'V', 'I', 'R', '.', "'"]
+Gaining the height, slowly turn round, and happened to him whose good opinion once lost is lost for ever." 0.189285714286
+Gaining the height, slowly turn round, and happened to him whose good opinion once lost is lost for ever."
+['V', 'D', 'N', ',', 'R', 'V', 'N', ',', 'C', 'V', 'T', 'P', 'W', 'J', 'N', 'R', 'V', 'V', 'V', 'I', 'R', '.', "'"]
+False
+False
+
+^[[A
+['N', ',', ':', '`', 'D', 'N', 'V', 'R', 'D', 'J', 'P', 'V', 'R', ',', 'R', 'I', 'N', 'I', 'D', 'N', 'I', 'W', 'P', 'M', 'V', 'I', 'N', 'N', '.']
+Said,-- "This walk is not an instant I faced back, just in time for the sake of what you can do with Project Gutenberg-tm. 3.21785714286
+Said,-- "This walk is not an instant I faced back, just in time for the sake of what you can do with Project Gutenberg-tm.
+['N', ',', ':', '`', 'D', 'N', 'V', 'R', 'D', 'J', 'P', 'V', 'R', ',', 'R', 'I', 'N', 'I', 'D', 'N', 'I', 'W', 'P', 'M', 'V', 'I', 'N', 'N', '.']
+True
+False
+
+
+['C', 'I', 'D', 'J', 'N', ',', 'V', 'R', 'I', 'I', 'D', 'N', 'I', 'J', 'V', 'I', 'P', 'J', 'N', '.']
+And with a long while, let alone down in the ship at last gleamed before our urn-like prow. 0.6625
+And with a long while, let alone down in the ship at last gleamed before our urn-like prow.
+['C', 'I', 'D', 'J', 'N', ',', 'V', 'R', 'I', 'I', 'D', 'N', 'I', 'J', 'V', 'I', 'P', 'J', 'N', '.']
+False
+False
+
+
+['N', 'V', 'I', 'P', 'J', 'N', 'I', 'P', 'N', 'V', 'T', 'V', 'P', 'D', 'N', 'I', 'D', 'N', '.']
+Was compared with my own summer with my back ached to think all the success of the whale. 1.65892857143
+Was compared with my own summer with my back ached to think all the success of the whale.
+['N', 'V', 'I', 'P', 'J', 'N', 'I', 'P', 'N', 'V', 'T', 'V', 'P', 'D', 'N', 'I', 'D', 'N', '.']
+True
+False
+
+
+['I', 'D', 'J', 'N', 'I', 'R', 'J', 'D', 'N', ',', 'W', ',', 'I', 'D', 'P', 'N', 'N', 'V', 'I', 'V', 'I', 'N', ':', 'P']
+For the first man of so unsuitable a marriage, which, in all its exercises boasts nothing like dancing after all.--I 2.70714285714
+For the first man of so unsuitable a marriage, which, in all its exercises boasts nothing like dancing after all.--I
+['I', 'D', 'J', 'N', 'I', 'R', 'J', 'D', 'N', ',', 'W', ',', 'I', 'D', 'P', 'N', 'N', 'V', 'I', 'V', 'I', 'N', ':', 'P']
+True
+False
+
+
+['D', 'N', 'I', 'N', '.', 'N', ',', 'N', ',', 'N', '.']
+The use of thunder? Um, um, um. 1.05535714286
+The use of thunder? Um, um, um.
+['D', 'N', 'I', 'N', '.', 'N', ',', 'N', ',', 'N', '.']
+False
+False
+
+
+['R', 'J', '.', "'"]
+Not true." 1.01785714286
+Not true."
+['R', 'J', '.', "'"]
+False
+False
+
+
+['V', 'V', 'N', ',', 'W', 'D', 'J', 'N', 'I', 'C', 'N', ',', 'C', 'V', 'I', 'J', 'I', 'N', '.']
+Has been London, where a particular whale in one corner, and looking as anxious as gold-hunters. 3.67142857143
+Has been London, where a particular whale in one corner, and looking as anxious as gold-hunters.
+['V', 'V', 'N', ',', 'W', 'D', 'J', 'N', 'I', 'C', 'N', ',', 'C', 'V', 'I', 'J', 'I', 'N', '.']
+False
+False
+
+
+['N', 'D', 'N', 'R', 'J', 'T', 'D', 'N', ',', 'W', 'D', 'N', ',', 'I', 'D', 'J', 'N', 'D', 'V', 'R', 'V', 'V', ',', 'P', 'V', 'W', 'J', 'P', 'V', 'V', 'R', 'J', 'I', 'D', 'J', 'N', ',', 'C', 'I', 'R', 'I', 'D', 'N', 'P', 'N', '.']
+To The University of Adelaide Library for preserving the utmost politeness. 5.13392857143
+To The University of Adelaide Library for preserving the utmost politeness.
+['T', 'D', 'N', 'I', 'N', 'N', 'I', 'V', 'D', 'J', 'N', '.']
+False
+False
+
+
+['N', ',', 'C', 'V', 'P', ',', 'C', 'I', 'N', '.']
+Light, and felt it, and for aye. 1.05714285714
+Light, and felt it, and for aye.
+['N', ',', 'C', 'V', 'P', ',', 'C', 'I', 'N', '.']
+False
+False
+
+
+['N', ',', 'W', 'I', 'D', 'J', 'J', 'N', '.']
+Sir, what in the same intelligible tone. 0.0714285714286
+Sir, what in the same intelligible tone.
+['N', ',', 'W', 'I', 'D', 'J', 'J', 'N', '.']
+False
+False
+
+
+['P', 'M', 'R', 'V', 'N', '.']
+He could not justify _him_. 1.04821428571
+He could not justify _him_.
+['P', 'M', 'R', 'V', 'N', '.']
+False
+False
+
+
+['D', 'N', 'I', 'P', 'R', 'V', 'T', 'V', 'C', 'N', ',', 'I', 'D', 'J', 'N', 'N', 'V', 'P', 'N', ',', 'C', 'N', 'P', 'I', 'D', 'N', 'I', 'D', 'J', 'N', 'T', 'V', 'N', 'I', 'N', 'T', 'P', 'N', 'V', 'V', 'W', 'D', 'N', 'I', 'N', ':', 'I', 'W', 'P', 'V', 'R', 'V', 'V', 'R', ',', 'C', 'V', 'I', 'D', 'J', 'N', ':', 'D', 'N', ',', 'C', 'D', 'N', 'I', 'D', 'N', ',', 'C', 'D', 'N', 'N', 'M', 'V', 'P', 'C', 'J', 'D', 'N', 'N', 'W', 'P', 'V', ',', 'P', 'R', 'V', 'I', 'D', 'N', 'V', 'P', 'I', 'D', 'J', 'D', 'J', 'N', 'V', 'I', 'P', ',', 'C', 'D', 'N', '.']
+Be called resentful.--My 1.04285714286
+Be called resentful.--My
+['V', 'V', '-', ':', 'N']
+False
+False
+
+
+['V', 'P', 'M', 'V', 'N', 'T', 'V', 'P', 'V', 'I', 'D', 'N', ',', 'D', 'J', 'J', 'N', 'I', 'N', 'P', 'V', 'N', '.']
+Flattering it might add something to pry them adrift from the eastward, the very great danger of Lydia's leaving home. 3.21071428571
+Flattering it might add something to pry them adrift from the eastward, the very great danger of Lydia's leaving home.
+['V', 'P', 'M', 'V', 'N', 'T', 'V', 'P', 'V', 'I', 'D', 'N', ',', 'D', 'J', 'J', 'N', 'I', 'N', 'P', 'V', 'N', '.']
+False
+False
+
+
+['N', 'P', 'J', 'N', 'V', 'I', 'C', 'R', '.', "'"]
+Fellow'S healthy cheek is like or not." 1.06964285714
+Fellow'S healthy cheek is like or not."
+['N', 'P', 'J', 'N', 'V', 'I', 'C', 'R', '.', "'"]
+True
+False
+
+
+['N', 'P', ',', 'R', 'V', 'I', 'D', 'N', 'I', 'D', 'N', 'P', 'N', 'V', 'R', 'I', 'D', 'N', 'V', 'T', 'D', 'N', ',', 'P', 'V', 'R', 'I', 'J', '.']
+Towards us, impatiently standing in the deep with the stranger's boats were plain as the insect does to the sun, he's always among 'em. 0.241071428571
+Towards us, impatiently standing in the deep with the stranger's boats were plain as the insect does to the sun, he's always among 'em.
+['N', 'P', ',', 'R', 'V', 'I', 'D', 'N', 'I', 'D', 'N', 'P', 'N', 'V', 'R', 'I', 'D', 'N', 'V', 'T', 'D', 'N', ',', 'P', 'V', 'R', 'I', 'J', '.']
+True
+False
+
+
+['P', 'V', 'D', 'N', ',', 'T', 'V', 'I', 'D', 'N', '.']
+You take the time, to increase on this head. 0.0785714285714
+You take the time, to increase on this head.
+['P', 'V', 'D', 'N', ',', 'T', 'V', 'I', 'D', 'N', '.']
+False
+False
+
+
+['V', 'J', 'N', ',', 'C', 'R', 'V', 'J', 'N', 'N', 'D', 'N', 'R', '.']
+Pointing high upward, but soon beat downward again towards the Parsonage together. 1.14642857143
+Pointing high upward, but soon beat downward again towards the Parsonage together.
+['V', 'J', 'N', ',', 'C', 'R', 'V', 'J', 'N', 'N', 'D', 'N', 'R', '.']
+False
+False
+
+
+['D', 'N', 'I', 'P', 'V', 'D', 'N', 'T', 'V', 'V', 'I', 'D', 'J', 'N', ':', 'J', 'N', 'V', 'V', 'I', 'R', 'M', 'V', 'N', 'T', 'D', 'J', 'N', ',', 'R', 'P', 'M', 'V', 'I', 'D', 'C', 'N', 'V', ',', 'V', 'R', 'V', 'I', 'P', 'N', '.']
+Half of the Pequod held on his interesting family. 3.08928571429
+Half of the Pequod held on his interesting family.
+['N', 'I', 'D', 'N', 'V', 'I', 'P', 'J', 'N', '.']
+True
+False
+
+
+['D', 'N', 'C', 'N', 'I', 'J', '.']
+This eBook or online at www.gutenberg.org/license. 0.0892857142857
+This eBook or online at www.gutenberg.org/license.
+['D', 'N', 'C', 'N', 'I', 'J', '.']
+False
+False
+
+
+['D', ':', 'D', 'N', 'W', 'D', 'J', 'N', 'N', 'M', 'V', 'V', 'R', 'R', 'J', '.']
+No: the reason why the grave-digger made music must have been more wretchedly blind. 1.15
+No: the reason why the grave-digger made music must have been more wretchedly blind.
+['D', ':', 'D', 'N', 'W', 'D', 'J', 'N', 'N', 'M', 'V', 'V', 'R', 'R', 'J', '.']
+False
+False
+
+
+['I', 'N', 'N', ',', 'I', 'D', 'N', ',', 'P', 'R', 'V', 'I', 'D', 'N', ',', 'P', 'V', 'R', 'R', 'V', 'I', 'D', 'R', 'J', 'N', 'N', 'P', 'V', 'D', 'N', 'I', 'N', '.']
+Governed in this stupid manner. 0.0553571428571
+Governed in this stupid manner.
+['N', 'I', 'D', 'J', 'N', '.']
+False
+False
+
+
+['N', 'V', 'I', ',', 'I', 'P', 'M', 'R', 'V', 'I', 'W', ',', 'P', 'M', 'V', 'D', 'N', 'I', 'W', 'P', 'R', 'V', 'J', 'I', 'I', 'P', 'J', 'N', '.']
+Have gone on, if you cannot guess with who, I shall preserve the style in which he never speaks much unless among his intimate acquaintance. 2.25
+Have gone on, if you cannot guess with who, I shall preserve the style in which he never speaks much unless among his intimate acquaintance.
+['N', 'V', 'I', ',', 'I', 'P', 'M', 'R', 'V', 'I', 'W', ',', 'P', 'M', 'V', 'D', 'N', 'I', 'W', 'P', 'R', 'V', 'J', 'I', 'I', 'P', 'J', 'N', '.']
+True
+False
+
+
+['V', 'N', 'I', 'D', 'J', '.']
+Unmisgiving hardihood of a tow-line. 1.06428571429
+Unmisgiving hardihood of a tow-line.
+['V', 'N', 'I', 'D', 'J', '.']
+False
+False
+
+
+['N', 'P', 'V', ',', 'C', 'I', 'J', ',', 'N', 'I', 'N', ',', 'I', 'V', ',', 'N', ',', 'P', 'J', 'N', 'N', ':', 'D', 'N', 'C', 'N', 'R', 'P', 'D', 'N', 'V', 'V', 'R', 'J', 'I', 'N', 'P', '.', "'"]
+Have gone upon the plain, men fly the neighborhood of some duration." 1.12321428571
+Have gone upon the plain, men fly the neighborhood of some duration."
+['N', 'V', 'I', 'D', 'N', ',', 'N', 'R', 'D', 'N', 'I', 'D', 'N', '.', "'"]
+True
+False
+
+
+['N', 'I', 'P', 'N', ',', 'C', 'V', 'D', 'J', 'N', 'T', 'J', ':', 'C', 'P', 'V', 'R', 'V', 'I', 'J', 'N', 'N', ',', 'C', 'V', 'N', 'V', 'R', 'I', 'P', 'N', 'D', 'R', 'V', 'I', 'D', 'N', '.']
+Strangest possible manners. 1.04821428571
+Strangest possible manners.
+['N', 'J', 'N', '.']
+False
+False
+
+
+['I', 'V', 'D', 'N', 'I', '`', 'P', 'V', 'P', '.', "'"]
+After thinking some time with "It is his." 1.075
+After thinking some time with "It is his."
+['I', 'V', 'D', 'N', 'I', '`', 'P', 'V', 'P', '.', "'"]
+False
+False
+
+
+['I', 'D', 'J', 'N', ',', 'N', 'C', 'N', 'T', 'D', 'N', 'N', 'R', 'I', 'D', 'N', 'V', 'P', 'N', 'N', ',', 'P', '.', 'W', 'D', 'J', 'N', 'D', 'N', '.']
+At no additional cost, fee or expense to the starry Cetus far beyond all utterance are your iron fists, hey? What a noble craft every way. 2.24642857143
+At no additional cost, fee or expense to the starry Cetus far beyond all utterance are your iron fists, hey? What a noble craft every way.
+['I', 'D', 'J', 'N', ',', 'N', 'C', 'N', 'T', 'D', 'N', 'N', 'R', 'I', 'D', 'N', 'V', 'P', 'N', 'N', ',', 'P', '.', 'W', 'D', 'J', 'N', 'D', 'N', '.']
+True
+False
+
+
+['N', ',', 'J', 'V', 'D', 'N', 'R', 'V', 'D', 'J', 'N', 'N', '.']
+Man, such is the son fitly replacing the infallible Presbyterian Church. 3.12857142857
+Man, such is the son fitly replacing the infallible Presbyterian Church.
+['N', ',', 'J', 'V', 'D', 'N', 'R', 'V', 'D', 'J', 'N', 'N', '.']
+False
+False
+
+
+['N', ',', 'T', 'V', 'D', 'N', 'I', 'N', '.']
+Stretch, to encounter the perils of life. 1.07321428571
+Stretch, to encounter the perils of life.
+['N', ',', 'T', 'V', 'D', 'N', 'I', 'N', '.']
+False
+False
+
+
+['J', 'N', 'N', 'I', 'D', 'N', ',', 'I', 'D', 'J', 'N', 'V', 'V', 'T', 'V', 'I', 'C', 'N', ':', 'D', 'N', 'I', 'R', 'I', 'I', 'N', ',', 'R', 'V', 'V', '.']
+It, give it to be dwelt on with redoubled velocity. 1.09107142857
+It, give it to be dwelt on with redoubled velocity.
+['P', ',', 'V', 'P', 'T', 'V', 'V', 'I', 'I', 'J', 'N', '.']
+False
+False
+
+
+['D', 'N', ',', 'I', 'J', 'N', 'N', '.']
+These extracts, for veritable gospel cetology. 0.0821428571429
+These extracts, for veritable gospel cetology.
+['D', 'N', ',', 'I', 'J', 'N', 'N', '.']
+False
+False
+
+
+['D', 'N', 'V', 'T', 'V', 'D', 'N', ',', 'R', ',', 'I', "'", ':', 'C', 'R', ',', 'R', ',', 'C', 'D', 'I', 'N', ',', 'D', 'I', 'J', 'P', 'V', 'T', 'V', 'I', 'D', 'N', ',', 'I', 'J', 'I', 'N', ':', 'C', 'N', ',', 'V', 'T', 'D', 'N', ',', 'I', 'J', 'N', 'V', 'J', '.']
+Some to the primary rock of the White Whale?" demanded Ahab, when the sun then be? The horse-shoe sign; for there was really derived. 2.2375
+Some to the primary rock of the White Whale?" demanded Ahab, when the sun then be? The horse-shoe sign; for there was really derived.
+['D', 'T', 'D', 'J', 'N', 'I', 'D', 'N', 'N', '.', "'", 'V', 'N', ',', 'W', 'D', 'N', 'R', 'V', '.', 'D', 'J', 'N', ':', 'I', 'E', 'V', 'R', 'V', '.']
+False
+False
+
+
+['N', 'M', 'I', 'D', 'N', 'V', 'V', 'I', 'P', 'J', 'N', 'I', 'D', 'N', ',', 'W', 'V', 'V', 'N', 'V', 'N', ',', 'I', 'J', 'J', 'J', 'N', 'I', 'P', 'J', 'N', '.']
+Parted; the two trembling traitors running up, besieged the cabin door, saying they were honoured with a pretty woman can secure it." 1.2375
+Parted; the two trembling traitors running up, besieged the cabin door, saying they were honoured with a pretty woman can secure it."
+['N', ':', 'D', 'C', 'V', 'N', 'V', 'R', ',', 'V', 'D', 'N', 'N', ',', 'V', 'P', 'V', 'V', 'I', 'D', 'R', 'N', 'M', 'V', 'P', '.', "'"]
+True
+False
+
+
+['D', 'N', 'I', 'D', 'N', ',', 'D', 'J', 'N', 'N', 'N', 'N', ':', 'W', 'I', 'J', 'N', 'J', 'D', 'N', 'I', 'N', 'D', 'R', 'R', 'V', '.', "'", '`', 'C', 'N', 'V', 'T', 'V', 'J', '.']
+Heighten its lustre, and without altering his erect posture, runs straight out from under him. 1.16785714286
+Heighten its lustre, and without altering his erect posture, runs straight out from under him.
+['N', 'P', 'N', ',', 'C', 'I', 'N', 'P', 'N', 'N', ',', 'V', 'R', 'I', 'I', 'I', 'P', '.']
+False
+False
+
+
+['N', 'N', ',', '`', 'N', 'N', '.']
+Miss Bingley, "despises cards. 2.05357142857
+Miss Bingley, "despises cards.
+['N', 'N', ',', '`', 'N', 'N', '.']
+False
+False
+
+Streamed it over again, Elizabeth," said he, when she could be no less in the country at all, or but very little, and tumble against each other, and with that, Peleg hurried him over the bulwarks of ships before the rest of the inverted compasses.
+Streamed it over again, Elizabeth," said he, when she could be no less in the country at all, or but very little, and tumble against each other, and with that, Peleg hurried him over the bulwarks of ships before the rest of the inverted compasses.
+['N', 'P', 'I', 'R', ',', 'N', ',', "'", 'V', 'P', ',', 'W', 'P', 'M', 'V', 'R', 'J', 'I', 'D', 'N', 'I', 'D', ',', 'C', 'C', 'R', 'J', ',', 'C', 'J', 'I', 'D', 'J', ',', 'C', 'I', 'D', ',', 'N', 'V', 'P', 'I', 'D', 'N', 'I', 'N', 'I', 'D', 'N', 'I', 'D', 'J', 'N', '.']
+True
+True
+
+
+['N', 'J', 'N', 'I', 'R', 'V', 'N', 'N', 'J', 'N', 'I', 'D', 'N', 'P', 'N', 'I', 'I', 'N', ':', 'D', 'N', 'V', 'V', 'I', 'D', 'N', ',', 'P', 'V', 'V', 'D', 'N', 'I', 'N', ',', 'R', 'V', 'T', 'V', 'I', 'P', 'D', 'N', '.']
+Gutenberg-Tm electronic works by freely sharing Project Gutenberg-tm electronic works in the ship's getting out of sight; all tackles are coiled in both instances, I had heard the hum of sails, just beginning to look in it all impurities.
+Gutenberg-Tm electronic works by freely sharing Project Gutenberg-tm electronic works in the ship's getting out of sight; all tackles are coiled in both instances, I had heard the hum of sails, just beginning to look in it all impurities.
+['N', 'J', 'N', 'I', 'R', 'V', 'N', 'N', 'J', 'N', 'I', 'D', 'N', 'P', 'N', 'I', 'I', 'N', ':', 'D', 'N', 'V', 'V', 'I', 'D', 'N', ',', 'P', 'V', 'V', 'D', 'N', 'I', 'N', ',', 'R', 'V', 'T', 'V', 'I', 'P', 'D', 'N', '.']
+True
+True
+
+
+['D', 'N', 'V', 'V', 'I', 'D', 'J', 'N', ',', 'R', ',', "'", 'V', 'N', ',', '`', 'R', 'J', ',', 'R', 'I', 'C', 'N', ',', 'P', 'V', 'T', 'V', 'J', '.']
+That which is conducted at a curious spout, too," said Daggoo, "very bushy, even for five minutes, you meant to be reasonable.
+That which is conducted at a curious spout, too," said Daggoo, "very bushy, even for five minutes, you meant to be reasonable.
+['D', 'N', 'V', 'V', 'I', 'D', 'J', 'N', ',', 'R', ',', "'", 'V', 'N', ',', '`', 'R', 'J', ',', 'R', 'I', 'C', 'N', ',', 'P', 'V', 'T', 'V', 'J', '.']
+True
+True
+
+
+['J', 'T', 'D', 'V', 'N', ':', 'C', 'C', 'D', 'N', 'I', 'N', 'V', 'N', ',', 'J', ',', 'J', 'C', 'J', 'N', '.']
+Belonged to this blessed minute (fifteen and a variety of computers including obsolete, old, middle-aged and new computers.
+Belonged to this blessed minute (fifteen and a variety of computers including obsolete, old, middle-aged and new computers.
+['J', 'T', 'D', 'V', 'N', ':', 'C', 'C', 'D', 'N', 'I', 'N', 'V', 'N', ',', 'J', ',', 'J', 'C', 'J', 'N', '.']
+True
+True
+
+
+['P', 'J', 'N', 'V', 'V', 'V', 'I', 'D', 'N', 'N', 'I', 'D', 'N', ':', 'P', 'V', 'P', 'I', 'W', 'P', 'V', ',', 'T', 'V', '.', 'C', 'P', 'M', 'V', 'N', 'P', 'I', 'N', 'V', 'I', 'D', 'N', 'V', '.']
+Her first surmise had been cut from the inclement weather of the spell; he told her of what I dared, to do! But I will buy Pemberley itself if Darcy were by no means unlike.
+Her first surmise had been cut from the inclement weather of the spell; he told her of what I dared, to do! But I will buy Pemberley itself if Darcy were by no means unlike.
+['P', 'J', 'N', 'V', 'V', 'V', 'I', 'D', 'N', 'N', 'I', 'D', 'N', ':', 'P', 'V', 'P', 'I', 'W', 'P', 'V', ',', 'T', 'V', '.', 'C', 'P', 'M', 'V', 'N', 'P', 'I', 'N', 'V', 'I', 'D', 'N', 'V', '.']
+True
+True
+
+
+['D', 'N', 'I', 'N', 'R', 'I', 'D', 'N', 'T', 'V', ':', 'N', 'P', 'V', 'N', 'N', 'N', 'R', 'V', 'I', 'I', 'D', 'N', 'I', 'N', 'P', 'N', ',', 'C', 'N', 'I', ',', 'P', 'V', 'V', 'I', 'N', 'V', 'D', 'N', 'N', 'I', 'N', 'N', 'I', 'D', 'N', ':', ',', 'C', 'R', 'I', 'P', 'V', 'R', 'D', 'J', 'N', 'I', 'D', 'N', '.']
+The use of anyone anywhere at no loss to imagine; till she heard Mr. Fitzwilliam Darcy formerly spoken of for the strength of Darcy's father, five years before, it was descried by passengers crossing the snowy whale within fifty yards of the voyage), yet now that he had not the smallest strands in the kitchen.
+The use of anyone anywhere at no loss to imagine; till she heard Mr. Fitzwilliam Darcy formerly spoken of for the strength of Darcy's father, five years before, it was descried by passengers crossing the snowy whale within fifty yards of the voyage), yet now that he had not the smallest strands in the kitchen.
+['D', 'N', 'I', 'N', 'R', 'I', 'D', 'N', 'T', 'V', ':', 'N', 'P', 'V', 'N', 'N', 'N', 'R', 'V', 'I', 'I', 'D', 'N', 'I', 'N', 'P', 'N', ',', 'C', 'N', 'I', ',', 'P', 'V', 'V', 'I', 'N', 'V', 'D', 'N', 'N', 'I', 'N', 'N', 'I', 'D', 'N', ':', ',', 'C', 'R', 'I', 'P', 'V', 'R', 'D', 'J', 'N', 'I', 'D', 'N', '.']
+True
+True
+
+
+
