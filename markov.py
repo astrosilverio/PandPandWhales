@@ -158,9 +158,9 @@ class DoubleMarkov(Markov):
         one = False
         two = False
         for w1, w2 in izip(sentence, sentence[1:]):
-            if w2 in self.text_one.bigrams[w1]:
+            if w2 in self.text_one.bigrams[w1] and w2 not in self.text_two.bigrams[w1]:
                 one = True
-            if w2 in self.text_two.bigrams[w1]:
+            if w2 in self.text_two.bigrams[w1] and w2 not in self.text_one.bigrams[w1]:
                 two = True
 
         both = one and two
