@@ -73,7 +73,6 @@ class Markov(object):
             if score < prob:
                 return word
             score -= prob
-        return False
          
     def make_bigram_sentence(self, bigram_probs_dict=None):
         if not bigram_probs_dict:
@@ -86,7 +85,6 @@ class Markov(object):
                 return " ".join(out)
             out.append(cur)
             prev = cur
-        return False
         
     def make_trigram_sentence(self, trigram_probs_dict=None):
         if not trigram_probs_dict:
@@ -100,7 +98,6 @@ class Markov(object):
                 return " ".join(out)
             out.append(cur)
             w1, w2 = w2, cur
-        return False
 
     def score_sentence(self, sent, trigram_probs=None, bigram_probs=None, unigram_probs=None):
         if not trigram_probs:
