@@ -1,3 +1,4 @@
+from __future__ import division
 import random
 import string
 from itertools import izip
@@ -36,7 +37,7 @@ class Markov(object):
                 counts[word] += 1
         total_words = sum(counts.values())
         for word, count in counts.items():
-            out[word] = count / float(total_words)
+            out[word] = count / total_words
         return out
         
     def make_ngram_freqs_dict(self, n):
@@ -64,7 +65,7 @@ class Markov(object):
         """
         out = defaultdict(lambda: defaultdict(lambda: self.LOW_NUMBER))
         for prev in counts_dict:
-            total_occurences = float(sum(counts_dict[prev].values()))
+            total_occurences = sum(counts_dict[prev].values())
             for cur in counts_dict[prev]:
                 out[prev][cur] = counts_dict[prev][cur] / total_occurences
         return out
@@ -172,13 +173,13 @@ class DoubleMarkov(Markov):
         is_sent = self.is_sentence(tweet)
         both = self.is_from_both_texts(tweet)
         
-        amusing = len(tweet)/140. + is_sent + both
+        amusing = len(tweet)/140 + is_sent + both
                    
-        while len(tweet) > 140 or amusing < 1.0:
+        while len(tweet) > 140 or amusing < 1:
             tweet = self.make_trigram_sentence()
             is_sent = self.is_sentence(tweet)
             both = self.is_from_both_texts(tweet)
-            amusing = len(tweet)/140. + is_sent + both
+            amusing = len(tweet)/140 + is_sent + both
 
         print amusing, len(tweet), is_sent, both
         return tweet
