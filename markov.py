@@ -45,7 +45,7 @@ class Markov(object):
             ngram_key = lambda tup: tup[0]
         elif n == 3:
             sent_zip = lambda sent: izip(sent, sent[1:], sent[2:])
-            ngram_key = lambda tup: tup[:1]
+            ngram_key = lambda tup: tup[:2]
         for sent in self.corpus:
             for ngram in sent_zip(sent):
                 target = ngram[-1]
