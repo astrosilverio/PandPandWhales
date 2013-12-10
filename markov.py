@@ -13,10 +13,12 @@ class Markov(object):
     def __init__(self, source_text):
         self.corpus = self.get_sentences(source_text)
         self.unigrams = self.make_unigrams()
-        self.bigram_freqs = self.make_bigram_counts_dict()
-        self.bigrams = self.make_bigrams(self.bigram_freqs)
-        self.trigram_freqs = self.make_trigram_counts_dict()
-        self.trigrams = self.make_trigrams(self.trigram_freqs)
+
+        bigram_freqs = self.make_bigram_counts_dict()
+        self.bigrams = self.make_bigrams(bigram_freqs)
+
+        trigram_freqs = self.make_trigram_counts_dict()
+        self.trigrams = self.make_trigrams(trigram_freqs)
         
     def get_sentences(self, filename):
         with open(filename) as f:
