@@ -14,11 +14,11 @@ class Markov(object):
         self.corpus = self.get_sentences(source_text)
         self.unigrams = self.make_unigrams()
 
-        bigram_freqs = self.make_bigram_counts_dict()
-        self.bigrams = self.make_bigrams(bigram_freqs)
+        bigram_freqs = self.make_bigram_freqs_dict()
+        self.bigrams = self.normalize_bigrams(bigram_freqs)
 
-        trigram_freqs = self.make_trigram_counts_dict()
-        self.trigrams = self.make_trigrams(trigram_freqs)
+        trigram_freqs = self.make_trigram_freqs_dict()
+        self.trigrams = self.normalize_trigrams(trigram_freqs)
         
     def get_sentences(self, filename):
         with open(filename) as f:
@@ -37,7 +37,7 @@ class Markov(object):
             out[word] = count / float(total_words)
         return out
         
-    def make_bigram_counts_dict(self):
+    def make_bigram_freqs_dict(self):
         """ Output: {'white': {'whale': 9, 'expanse': 1}}"""
         counts_dict = defaultdict(Counter)
         for sent in self.corpus:
@@ -45,7 +45,7 @@ class Markov(object):
                 counts_dict[prev][cur] += 1
         return counts_dict
             
-    def make_bigrams(self, counts_dict):
+    def normalize_bigrams(self, counts_dict):
         """
         Input: {'white': {'whale': 9, 'expanse': 1}}
         Output: {'white': {'whale': .9, 'expanse': .1}}
@@ -57,14 +57,14 @@ class Markov(object):
                 out[prev][cur] = counts_dict[prev][cur] / total_occurences
         return out
                                 
-    def make_trigram_counts_dict(self):
+    def make_trigram_freqs_dict(self):
         counts_dict = defaultdict(Counter)
         for sent in self.corpus:
             for (prev_prev, prev, cur) in izip(sent, sent[1:], sent[2:]):
                 counts_dict[(prev_prev, prev)][cur] += 1
         return counts_dict
         
-    def make_trigrams(self, counts_dict):
+    def normalize_trigrams(self, counts_dict):
         out = defaultdict(lambda: defaultdict(lambda: self.LOW_NUMBER))
         for (w1, w2) in counts_dict:
             for cur in counts_dict[(w1, w2)]:
