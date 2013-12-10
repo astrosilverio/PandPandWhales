@@ -96,24 +96,18 @@ class Markov(object):
             elif n == 3:
                 prev = (prev[1], cur)
 
-    def score_sentence(self, sent, trigram_probs=None, bigram_probs=None, unigram_probs=None):
-        if not trigram_probs:
-            trigram_probs = self.trigrams
-        if not bigram_probs:
-            bigram_probs = self.bigrams
-        if not unigram_probs:
-            unigram_probs = self.unigrams
+    def score_sentence(self, sent):
         total_surprise = 0
         words = nltk.word_tokenize(sent)
         words = ["**Beginning**"] + words + ["**End**"]
         for w1, w2, cur in izip(words, words[1:], words[2:]):
-            if (w1, w2) in trigram_probs and cur in trigram_probs[(w1, w2)]:
-                surprise = -math.log(trigram_probs[(w1, w2)][cur], 2)
-            elif w2 in bigram_probs and cur in bigram_probs[w2]:
-                prob = 0.4 * bigram_probs[w2][cur]
+            if (w1, w2) in self.trigrams and cur in self.trigrams[(w1, w2)]:
+                surprise = -math.log(self.trigrams[(w1, w2)][cur], 2)
+            elif w2 in self.bigrams and cur in self.bigrams[w2]:
+                prob = 0.4 * self.bigrams[w2][cur]
                 surprise = -math.log(prob, 2)
             else:
-                prob = 0.4 * 0.4 * unigram_probs[cur]
+                prob = 0.4 * 0.4 * self.unigrams[cur]
                 surprise = -math.log(prob, 2)
             total_surprise += surprise
         total_surprise /= (len(words) - 2)
