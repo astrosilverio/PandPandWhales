@@ -52,8 +52,9 @@ class Markov(object):
         """
         out = defaultdict(lambda: defaultdict(lambda: self.LOW_NUMBER))
         for prev in counts_dict:
+            total_occurences = float(sum(counts_dict[prev].values()))
             for cur in counts_dict[prev]:
-                out[prev][cur] = counts_dict[prev][cur] / float(sum(counts_dict[prev].values()))
+                out[prev][cur] = counts_dict[prev][cur] / total_occurences
         return out
                                 
     def make_trigram_counts_dict(self):
