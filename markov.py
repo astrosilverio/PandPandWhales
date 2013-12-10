@@ -42,12 +42,14 @@ class Markov(object):
         counts_dict = defaultdict(Counter)
         if n == 2:
             sent_zip = lambda sent: izip(sent, sent[1:])
+            ngram_key = lambda tup: tup[0]
         elif n == 3:
             sent_zip = lambda sent: izip(sent, sent[1:], sent[2:])
+            ngram_key = lambda tup: tup[:1]
         for sent in self.corpus:
             for ngram in sent_zip(sent):
                 target = ngram[-1]
-                key = ngram[:-1] # makes all keys tuples, not ideal :(
+                key = ngram_key(ngram)
                 counts_dict[key][target] += 1
         return counts_dict
             
