@@ -18,8 +18,8 @@ class Markov(object):
         self.trigram_freqs = self.make_trigram_counts_dict()
         self.trigrams = self.make_trigrams(self.trigram_freqs)
         
-    def get_sentences(self, fn):
-        with open(fn) as f:
+    def get_sentences(self, filename):
+        with open(filename) as f:
             out = f.readlines()
             out = [["**Beginning**"] + line.strip().split() + ["**End**"] for line in out]
         return out
@@ -28,8 +28,8 @@ class Markov(object):
         out = defaultdict(lambda: self.LOW_NUMBER)
         counts = Counter()
         for sent in self.corpus:
-            for cur in sent:
-                counts[cur] += 1
+            for word in sent:
+                counts[word] += 1
         total_words = sum(counts.values())
         for word, count in counts.items():
             out[word] = count / float(total_words)
