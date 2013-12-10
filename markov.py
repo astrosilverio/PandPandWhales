@@ -3,7 +3,7 @@ import string
 from itertools import izip
 from collections import defaultdict, Counter
 import nltk
-import pdb
+# import pdb
 import math
 
 class Markov(object):
@@ -93,7 +93,7 @@ class Markov(object):
         while True:
             cur = self.choose_word(trigram_probs_dict[(w1, w2)])
             if cur == "**End**":
-                return out
+                return " ".join(out)
             out.append(cur)
             w1, w2 = w2, cur
         return False
@@ -106,8 +106,9 @@ class Markov(object):
         if not unigram_probs:
             unigram_probs = self.unigrams
         total_surprise = 0
-        sent = ["**Beginning**"] + sent + ["**End**"]
-        for w1, w2, cur in izip(sent, sent[1:], sent[2:]):
+        words = nltk.word_tokenize(sent)
+        words = ["**Beginning**"] + words + ["**End**"]
+        for w1, w2, cur in izip(words, words[1:], words[2:]):
             if (w1, w2) in trigram_probs and cur in trigram_probs[(w1, w2)]:
                 surprise = -math.log(trigram_probs[(w1, w2)][cur], 2)
             elif w2 in bigram_probs and cur in bigram_probs[w2]:
@@ -117,7 +118,7 @@ class Markov(object):
                 prob = 0.4 * 0.4 * unigram_probs[cur]
                 surprise = -math.log(prob, 2)
             total_surprise += surprise
-        total_surprise /= (len(sent) - 2)
+        total_surprise /= (len(words) - 2)
         return total_surprise
 
 class DoubleMarkov(Markov):
@@ -146,8 +147,10 @@ class DoubleMarkov(Markov):
 
     def is_sentence(self, sentence):
     
+        words = nltk.word_tokenize(sentence)
+    
         valid_sent = False
-        pos = [p[0] for w, p in nltk.pos_tag(sentence)]
+        pos = [p[0] for w, p in nltk.pos_tag(words)]
         for p1, p2 in izip(pos, pos[1:]):
             if (p1, p2) == ('N', 'V'):
                 valid_sent = True
@@ -155,9 +158,11 @@ class DoubleMarkov(Markov):
         
     def is_from_both_texts(self, sentence):
     
+        words = nltk.word_tokenize(sentence)
+    
         one = False
         two = False
-        for w1, w2 in izip(sentence, sentence[1:]):
+        for w1, w2 in izip(words, words[1:]):
             if w2 in self.text_one.bigrams[w1] and w2 not in self.text_two.bigrams[w1]:
                 one = True
             if w2 in self.text_two.bigrams[w1] and w2 not in self.text_one.bigrams[w1]:
@@ -167,24 +172,22 @@ class DoubleMarkov(Markov):
         return both
         
         
-    def make_tweet(self, length_weight = 0.25, name_weight = 1.0, fun_weight = 0.5, sentence_weight = 3.5):
+    def make_tweet(self):
     
-        funny = ['bonnet', 'ball', 'casks', 'ship', 'marry', 'marriage', 'marries', 'married', 'creature', 'sea', 'whale']
+#        funny = ['bonnet', 'ball', 'casks', 'ship', 'marry', 'marriage', 'marries', 'married', 'creature', 'sea', 'whale']
 
         tweet = self.make_trigram_sentence()
-        sent = self.is_sentence(tweet)
+        is_sent = self.is_sentence(tweet)
         both = self.is_from_both_texts(tweet)
-        tweet = " ".join(tweet)
         
-        amusing = len(tweet)/140. + sent + both
+        amusing = len(tweet)/140. + is_sent + both
                    
         while len(tweet) > 140 or amusing < 1.0:
             tweet = self.make_trigram_sentence()
-            sent = self.is_sentence(tweet)
+            is_sent = self.is_sentence(tweet)
             both = self.is_from_both_texts(tweet)
-            tweet = " ".join(tweet)
-            amusing = len(tweet)/140. + sent + both
+            amusing = len(tweet)/140. + is_sent + both
 
-        print amusing, len(tweet), sent, both
+        print amusing, len(tweet), is_sent, both
         return tweet
         
