@@ -14,10 +14,10 @@ class Markov(object):
         self.corpus = self.get_sentences(source_text)
         self.unigrams = self.make_unigrams()
 
-        bigram_freqs = self.make_bigram_freqs_dict()
+        bigram_freqs = self.make_ngram_freqs_dict(2)
         self.bigrams = self.normalize_ngrams(bigram_freqs)
 
-        trigram_freqs = self.make_trigram_freqs_dict()
+        trigram_freqs = self.make_ngram_freqs_dict(3)
         self.trigrams = self.normalize_ngrams(trigram_freqs)
         
     def get_sentences(self, filename):
@@ -37,19 +37,25 @@ class Markov(object):
             out[word] = count / float(total_words)
         return out
         
-    def make_bigram_freqs_dict(self):
-        """ Output: {'white': {'whale': 9, 'expanse': 1}}"""
+    def make_ngram_freqs_dict(self, n):
+        """ Output for n = 2: {'white': {'whale': 9, 'expanse': 1}}"""
         counts_dict = defaultdict(Counter)
+        if n == 2:
+            sent_zip = lambda sent: izip(sent, sent[1:])
+        elif n == 3:
+            sent_zip = lambda sent: izip(sent, sent[1:], sent[2:])
         for sent in self.corpus:
-            for (prev, cur) in izip(sent, sent[1:]):
-                counts_dict[prev][cur] += 1
+            for ngram in sent_zip(sent):
+                target = ngram[-1]
+                key = ngram[:-1] # makes all keys tuples, not ideal :(
+                counts_dict[key][target] += 1
         return counts_dict
             
     def normalize_ngrams(self, counts_dict):
         """
         e.g., for bigrams:
-        Input: {'white': {'whale': 9, 'expanse': 1}}
-        Output: {'white': {'whale': .9, 'expanse': .1}}
+        Input: {('white',): {'whale': 9, 'expanse': 1}}
+        Output: {('white'): {'whale': .9, 'expanse': .1}}
         `prev` key is a word for bigrams and a tuple for trigrams.
         """
         out = defaultdict(lambda: defaultdict(lambda: self.LOW_NUMBER))
@@ -58,13 +64,6 @@ class Markov(object):
             for cur in counts_dict[prev]:
                 out[prev][cur] = counts_dict[prev][cur] / total_occurences
         return out
-                                
-    def make_trigram_freqs_dict(self):
-        counts_dict = defaultdict(Counter)
-        for sent in self.corpus:
-            for (prev_prev, prev, cur) in izip(sent, sent[1:], sent[2:]):
-                counts_dict[(prev_prev, prev)][cur] += 1
-        return counts_dict
         
     def choose_word(self, word_dist):
         score = random.random()    
