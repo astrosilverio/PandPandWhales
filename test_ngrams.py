@@ -26,9 +26,10 @@ class Test_NGrams(unittest.TestCase):
         self.assertEqual(self.test_markov.bigrams["I"]["have"], 1/3.)
     
     def test_bigrams_counter(self):
-        self.assertEqual(type(self.test_markov.bigram_freqs), defaultdict)
-        self.assertEqual(self.test_markov.bigram_freqs["I"]["am"], 2)
-        self.assertEqual(self.test_markov.bigram_freqs["."]["**End**"], 3)
+        bigram_freqs = self.test_markov.make_ngram_freqs_dict(2)
+        self.assertEqual(type(bigram_freqs), defaultdict)
+        self.assertEqual(bigram_freqs["I"]["am"], 2)
+        self.assertEqual(bigram_freqs["."]["**End**"], 3)
         
     def test_trigrams(self):
         self.assertEqual(type(self.test_markov.trigrams), defaultdict)
@@ -37,9 +38,10 @@ class Test_NGrams(unittest.TestCase):
         self.assertEqual(self.test_markov.trigrams[("I","have")]["rocketships"], 1e-5)
 
     def test_trigrams_counter(self):
-        self.assertEqual(type(self.test_markov.trigram_freqs), defaultdict)
-        self.assertEqual(self.test_markov.trigram_freqs[("Darcy",".")]["**End**"], 1)
-        self.assertEqual(self.test_markov.trigram_freqs[("**Beginning**","I")]["am"], 2)
+        trigram_freqs = self.test_markov.make_ngram_freqs_dict(3)
+        self.assertEqual(type(trigram_freqs), defaultdict)
+        self.assertEqual(trigram_freqs[("Darcy",".")]["**End**"], 1)
+        self.assertEqual(trigram_freqs[("**Beginning**","I")]["am"], 2)
     
     def tearDown(self):
         os.remove("in.txt")
