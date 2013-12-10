@@ -19,6 +19,8 @@ class Markov(object):
 
         trigram_freqs = self.make_ngram_freqs_dict(3)
         self.trigrams = self.normalize_ngrams(trigram_freqs)
+
+        self.ngrams = [None, self.unigrams, self.bigrams, self.trigrams]
         
     def get_sentences(self, filename):
         with open(filename) as f:
@@ -74,30 +76,25 @@ class Markov(object):
                 return word
             score -= prob
          
-    def make_bigram_sentence(self, bigram_probs_dict=None):
-        if not bigram_probs_dict:
-            bigram_probs_dict = self.bigrams
-        prev = "**Beginning**"
-        out = []
+    def make_ngram_sentence(self, n=3):
+        assert n in (2,3)
+        ngram_probs_dict = self.ngrams[n]
+        if n == 2:
+            prev = "**Beginning**"
+            out = []
+        elif n == 3:
+            first = self.choose_word(self.bigrams["**Beginning**"])
+            prev = ("**Beginning**", first)
+            out = [first]
         while True:
-            cur = self.choose_word(bigram_probs_dict[prev])
+            cur = self.choose_word(ngram_probs_dict[prev])
             if cur == "**End**":
                 return " ".join(out)
             out.append(cur)
-            prev = cur
-        
-    def make_trigram_sentence(self, trigram_probs_dict=None):
-        if not trigram_probs_dict:
-            trigram_probs_dict = self.trigrams
-        w1 = "**Beginning**"
-        w2 = self.choose_word(self.bigrams[w1])
-        out = [w2]
-        while True:
-            cur = self.choose_word(trigram_probs_dict[(w1, w2)])
-            if cur == "**End**":
-                return " ".join(out)
-            out.append(cur)
-            w1, w2 = w2, cur
+            if n == 2:
+                prev = cur
+            elif n == 3:
+                prev = (prev[1], cur)
 
     def score_sentence(self, sent, trigram_probs=None, bigram_probs=None, unigram_probs=None):
         if not trigram_probs:
