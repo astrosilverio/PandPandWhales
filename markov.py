@@ -15,10 +15,10 @@ class Markov(object):
         self.unigrams = self.make_unigrams()
 
         bigram_freqs = self.make_bigram_freqs_dict()
-        self.bigrams = self.normalize_bigrams(bigram_freqs)
+        self.bigrams = self.normalize_ngrams(bigram_freqs)
 
         trigram_freqs = self.make_trigram_freqs_dict()
-        self.trigrams = self.normalize_trigrams(trigram_freqs)
+        self.trigrams = self.normalize_ngrams(trigram_freqs)
         
     def get_sentences(self, filename):
         with open(filename) as f:
@@ -45,10 +45,12 @@ class Markov(object):
                 counts_dict[prev][cur] += 1
         return counts_dict
             
-    def normalize_bigrams(self, counts_dict):
+    def normalize_ngrams(self, counts_dict):
         """
+        e.g., for bigrams:
         Input: {'white': {'whale': 9, 'expanse': 1}}
         Output: {'white': {'whale': .9, 'expanse': .1}}
+        `prev` key is a word for bigrams and a tuple for trigrams.
         """
         out = defaultdict(lambda: defaultdict(lambda: self.LOW_NUMBER))
         for prev in counts_dict:
@@ -63,13 +65,6 @@ class Markov(object):
             for (prev_prev, prev, cur) in izip(sent, sent[1:], sent[2:]):
                 counts_dict[(prev_prev, prev)][cur] += 1
         return counts_dict
-        
-    def normalize_trigrams(self, counts_dict):
-        out = defaultdict(lambda: defaultdict(lambda: self.LOW_NUMBER))
-        for (w1, w2) in counts_dict:
-            for cur in counts_dict[(w1, w2)]:
-                out[(w1, w2)][cur] = counts_dict[(w1, w2)][cur] / float(sum(counts_dict[(w1, w2)].values()))
-        return out
         
     def choose_word(self, word_dist):
         score = random.random()    
