@@ -38,6 +38,7 @@ class Markov(object):
         return out
         
     def make_bigram_counts_dict(self):
+        """ Output: {'white': {'whale': 9, 'expanse': 1}}"""
         counts_dict = defaultdict(Counter)
         for sent in self.corpus:
             for (prev, cur) in izip(sent, sent[1:]):
@@ -45,6 +46,10 @@ class Markov(object):
         return counts_dict
             
     def make_bigrams(self, counts_dict):
+        """
+        Input: {'white': {'whale': 9, 'expanse': 1}}
+        Output: {'white': {'whale': .9, 'expanse': .1}}
+        """
         out = defaultdict(lambda: defaultdict(lambda: self.LOW_NUMBER))
         for prev in counts_dict:
             for cur in counts_dict[prev]:
