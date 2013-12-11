@@ -121,12 +121,17 @@ class DoubleMarkov(Markov):
     def __init__(self, text_one, text_two):
         self.text_one = text_one
         self.text_two = text_two
+        
         self.corpus = self.text_one.corpus + self.text_two.corpus
         self.unigrams = self.make_unigrams()
-        self.bigram_freqs = self.make_bigram_counts_dict()
-        self.bigrams = self.make_bigrams(self.bigram_freqs)
-        self.trigram_freqs = self.make_trigram_counts_dict()
-        self.trigrams = self.make_trigrams(self.trigram_freqs)        
+        
+        bigram_freqs = self.make_ngram_freqs_dict(2)
+        self.bigrams = self.normalize_ngrams(bigram_freqs)
+        
+        trigram_freqs = self.make_ngram_freqs_dict(3)
+        self.trigrams = self.normalize_ngrams(trigram_freqs)  
+        
+        self.ngrams = [None, self.unigrams, self.bigrams, self.trigrams]      
         
     def get_propers(self, text):
 
@@ -169,14 +174,14 @@ class DoubleMarkov(Markov):
     
 #        funny = ['bonnet', 'ball', 'casks', 'ship', 'marry', 'marriage', 'marries', 'married', 'creature', 'sea', 'whale']
 
-        tweet = self.make_trigram_sentence()
+        tweet = self.make_ngram_sentence()
         is_sent = self.is_sentence(tweet)
         both = self.is_from_both_texts(tweet)
         
         amusing = len(tweet)/140 + is_sent + both
                    
         while len(tweet) > 140 or amusing < 1:
-            tweet = self.make_trigram_sentence()
+            tweet = self.make_ngram_sentence()
             is_sent = self.is_sentence(tweet)
             both = self.is_from_both_texts(tweet)
             amusing = len(tweet)/140 + is_sent + both
