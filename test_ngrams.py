@@ -42,7 +42,23 @@ class Test_NGrams(unittest.TestCase):
         self.assertEqual(type(trigram_freqs), defaultdict)
         self.assertEqual(trigram_freqs[("Darcy",".")]["**End**"], 1)
         self.assertEqual(trigram_freqs[("**Beginning**","I")]["am"], 2)
-    
+        
+    def test_make_sentence(self):
+        self.test_markov.make_ngram_sentence(n=2)
+        self.test_markov.make_ngram_sentence(n=3)
+        self.assertRaises(AssertionError, self.test_markov.make_ngram_sentence, n=5)
+        
+    def test_score_sentence(self):
+        """ make up nonsense sentence, make sure it scores worse than Markov sentence. possibly also make up word with same words as corpus but in a completly bogus order, that should also score lower"""
+        nonsense = "Vestiges of cetaceous gentility."
+        nonsense_score = self.test_markov.score_sentence(nonsense)
+        real_trigram_sent = self.test_markov.make_ngram_sentence()
+        real_trigram_score = self.test_markov.score_sentence(real_trigram_sent)
+        weird_order = "Darcy . I bonnet am bought have am"
+        weird_order_score = self.test_markov.score_sentence(weird_order)
+        self.assertGreater(nonsense_score, real_trigram_score)
+        self.assertGreater(weird_order_score, real_trigram_score)
+        
     def tearDown(self):
         os.remove("in.txt")
         os.remove("out.txt")
