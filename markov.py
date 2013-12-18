@@ -131,6 +131,7 @@ class Markov(object):
         post = ""
         while "***END_POST***" not in post:
             sentence = self.make_ngram_sentence(3)
+            sentence += random.choice(['','','','\n'])
             post += sentence
         post = post[:post.find("***END_POST***")]
         return post
