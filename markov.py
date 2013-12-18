@@ -11,8 +11,8 @@ class Markov(object):
 
     LOW_NUMBER = 1e-5
 
-    def __init__(self, source_text):
-        self.corpus = self.get_sentences(source_text)
+    def __init__(self, source_text, text_type='standard'):
+        self.corpus = self.get_sentences(source_text, text_type)
         self.unigrams = self.make_unigrams()
         self.word_nums = self.make_word_nums()
 
@@ -24,18 +24,23 @@ class Markov(object):
 
         self.ngrams = [None, self.unigrams, self.bigrams, self.trigrams]
         
-    def get_sentences(self, filename):
+    def get_sentences(self, filename, text_type):
         with open(filename) as f:
             out = f.readlines()
+
+        if text_type == 'standard':
             out = [["**Beginning**"] + line.strip().split() + ["**End**"] for line in out]
+        elif text_type == 'titles':
+            out = [line.strip().split() for line in out]
+
         return out
         
     def make_word_nums(self):
         out = defaultdict(list)
         for line in self.corpus:
-            line = line[1:-1]
             for i, word in enumerate(line):
                 out[i].append(word)
+                out[i-len(line)].append(word)
         return out
         
     def make_unigrams(self):
@@ -88,7 +93,8 @@ class Markov(object):
 
     def do_queneau(self):
         length = len(random.choice(self.corpus))
-        out = [random.choice(self.word_nums[i]) for i in range(length)]
+        out = [random.choice(self.word_nums[i]) for i in range(length - 1)]
+        out[-1] = random.choice(self.word_nums[-1])
         return self.smart_join(out)
         
          
@@ -122,10 +128,11 @@ class Markov(object):
         return "".join(out)
                 
     def make_post(self):
-        post = "***START_POST***"
+        post = ""
         while "***END_POST***" not in post:
             sentence = self.make_ngram_sentence(3)
             post += sentence
+        post = post[:post.find("***END_POST***")]
         return post
 
     def score_sentence(self, sent):

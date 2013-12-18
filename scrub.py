@@ -11,7 +11,9 @@ def get_posts():
                         title_start = text.find('title: "') + len('title: "')
                         title_end = text[title_start:].find('"') + title_start
                         title = text[title_start:title_end]
-                        titlefile.write(title + '\n')
+                        title_words = title[title.find(":")+2:]
+                        title_words = " ".join(title_words.split('\n'))
+                        titlefile.write(title_words + '\n')
 
                         text = text[3:] # slice off header start
                         header_end = text.find('---') + 3
