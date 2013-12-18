@@ -90,32 +90,28 @@ class Markov(object):
         while True:
             cur = self.choose_word(ngram_probs_dict[prev])
             if cur == "**End**":
-                return " ".join(out)
+                return self.smart_join(out)
             out.append(cur)
             if n == 2:
                 prev = cur
             elif n == 3:
                 prev = (prev[1], cur)
+
+    def smart_join(self, token_list):
+        out = []
+        for token in token_list:
+            if token in string.punctuation:
+                out.append(token)
+            else:
+                out.extend([' ', token])
+        return "".join(out)
                 
-    def make_post(self, n=3):
-        assert n in (2,3)
-        ngram_probs_dict = self.ngrams[n]
-        if n == 2:
-            prev = "***START_POST***"
-            out = []
-        elif n == 3:
-            first = self.choose_word(self.bigrams["***START_POST***"])
-            prev = ("***START_POST***", first)
-            out = [first]
-        while True:
-            cur = self.choose_word(ngram_probs_dict[prev])
-            if cur == "***END_POST***":
-                return " ".join(out)
-            out.append(cur)
-            if n == 2:
-                prev = cur
-            elif n == 3:
-                prev = (prev[1], cur)
+    def make_post(self):
+        post = "***START_POST***"
+        while "***END_POST***" not in post:
+            sentence = self.make_ngram_sentence(3)
+            post += sentence
+        return post
 
     def score_sentence(self, sent):
         total_surprise = 0
