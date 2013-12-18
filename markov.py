@@ -121,11 +121,12 @@ class Markov(object):
     def smart_join(self, token_list):
         out = []
         for token in token_list:
-            if token in string.punctuation:
+            if token in string.punctuation or token.startswith('//'):
                 out.append(token)
             else:
                 out.extend([' ', token])
         return "".join(out)
+        
                 
     def make_post(self):
         post = ""
