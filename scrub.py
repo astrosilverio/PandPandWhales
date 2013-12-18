@@ -16,7 +16,7 @@ def get_posts():
                         text = text[3:] # slice off header start
                         header_end = text.find('---') + 3
                         text = text[header_end:]
-                        text = "***START***" + text + "***END***\n\n"
+                        text = "***START_POST***" + text + "***END_POST***\n\n"
 
                         outfile.write(text)
 
