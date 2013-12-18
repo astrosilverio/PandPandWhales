@@ -14,6 +14,7 @@ class Markov(object):
     def __init__(self, source_text):
         self.corpus = self.get_sentences(source_text)
         self.unigrams = self.make_unigrams()
+        self.word_nums = self.make_word_nums()
 
         bigram_freqs = self.make_ngram_freqs_dict(2)
         self.bigrams = self.normalize_ngrams(bigram_freqs)
@@ -27,6 +28,14 @@ class Markov(object):
         with open(filename) as f:
             out = f.readlines()
             out = [["**Beginning**"] + line.strip().split() + ["**End**"] for line in out]
+        return out
+        
+    def make_word_nums(self):
+        out = defaultdict(list)
+        for line in self.corpus:
+            line = line[1:-1]
+            for i, word in enumerate(line):
+                out[i].append(word)
         return out
         
     def make_unigrams(self):
@@ -76,6 +85,12 @@ class Markov(object):
             if score < prob:
                 return word
             score -= prob
+
+    def do_queneau(self):
+        length = len(random.choice(self.corpus))
+        out = [random.choice(self.word_nums[i]) for i in range(length)]
+        return self.smart_join(out)
+        
          
     def make_ngram_sentence(self, n=3):
         assert n in (2,3)
