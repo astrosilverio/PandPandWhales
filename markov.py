@@ -96,6 +96,26 @@ class Markov(object):
                 prev = cur
             elif n == 3:
                 prev = (prev[1], cur)
+                
+    def make_post(self, n=3):
+        assert n in (2,3)
+        ngram_probs_dict = self.ngrams[n]
+        if n == 2:
+            prev = "***START_POST***"
+            out = []
+        elif n == 3:
+            first = self.choose_word(self.bigrams["***START_POST***"])
+            prev = ("***START_POST***", first)
+            out = [first]
+        while True:
+            cur = self.choose_word(ngram_probs_dict[prev])
+            if cur == "***END_POST***":
+                return " ".join(out)
+            out.append(cur)
+            if n == 2:
+                prev = cur
+            elif n == 3:
+                prev = (prev[1], cur)
 
     def score_sentence(self, sent):
         total_surprise = 0
