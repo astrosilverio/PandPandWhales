@@ -30,6 +30,7 @@ class Markov(object):
 
         if text_type == 'standard':
             out = [["**Beginning**"] + line.strip().split() + ["**End**"] for line in out]
+            out = [word.lstrip('`').rstrip('`') for word in out if word.count('`') % 2 == 1]
         elif text_type == 'titles':
             out = [line.strip().split() for line in out]
 
