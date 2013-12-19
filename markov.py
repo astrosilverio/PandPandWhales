@@ -132,10 +132,11 @@ class Markov(object):
         return "".join(out)
         
                 
-    def make_post(self):
+    def make_post(self, n=3):
+        assert n in (2,3)
         post = ""
         while "***END_POST***" not in post:
-            sentence = self.make_ngram_sentence(3)
+            sentence = self.make_ngram_sentence(n)
             sentence += random.choice(['','','','\n\n'])
             post += sentence
         post = post[:post.find("***END_POST***")]
