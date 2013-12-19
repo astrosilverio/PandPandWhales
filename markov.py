@@ -29,9 +29,10 @@ class Markov(object):
             out = f.readlines()
 
         if text_type == 'standard':
-            for line in out:
-                line = ["**Beginning**"] + line.strip().split() + ["**End**"]
-                line = [word.lstrip('`').rstrip('`') for word in line if word.count('`') % 2 == 1]
+            out = [["**Beginning**"] + line.strip().split() + ["**End**"] for line in out]
+            for i, line in enumerate(out):
+                line = [word.lstrip('`').rstrip('`') if (word.count('`') % 2 == 1) else word for word in line]
+                out[i] = line
         
         elif text_type == 'titles':
             out = [line.strip().split() for line in out]
