@@ -4,8 +4,10 @@ import string
 from itertools import izip
 from collections import defaultdict, Counter
 import nltk
+from nltk.tokenize.moses import MosesDetokenizer
 # import pdb
 import math
+
 
 class Markov(object):
 
@@ -22,13 +24,13 @@ class Markov(object):
         self.trigrams = self.normalize_ngrams(trigram_freqs)
 
         self.ngrams = [None, self.unigrams, self.bigrams, self.trigrams]
-        
+
     def get_sentences(self, filename):
         with open(filename) as f:
             out = f.readlines()
             out = [["**Beginning**"] + line.strip().split() + ["**End**"] for line in out]
         return out
-        
+
     def make_unigrams(self):
         out = defaultdict(lambda: self.LOW_NUMBER)
         counts = Counter()
@@ -39,7 +41,7 @@ class Markov(object):
         for word, count in counts.items():
             out[word] = count / total_words
         return out
-        
+
     def make_ngram_freqs_dict(self, n):
         """ Output for n = 2: {'white': {'whale': 9, 'expanse': 1}}"""
         counts_dict = defaultdict(Counter)
@@ -55,7 +57,7 @@ class Markov(object):
                 key = ngram_key(ngram)
                 counts_dict[key][target] += 1
         return counts_dict
-            
+
     def normalize_ngrams(self, counts_dict):
         """
         e.g., for bigrams:
@@ -69,14 +71,14 @@ class Markov(object):
             for cur in counts_dict[prev]:
                 out[prev][cur] = counts_dict[prev][cur] / total_occurences
         return out
-        
+
     def choose_word(self, word_dist):
-        score = random.random()    
+        score = random.random()
         for word, prob in word_dist.items():
             if score < prob:
                 return word
             score -= prob
-         
+
     def make_ngram_sentence(self, n=3):
         assert n in (2,3)
         ngram_probs_dict = self.ngrams[n]
@@ -90,7 +92,8 @@ class Markov(object):
         while True:
             cur = self.choose_word(ngram_probs_dict[prev])
             if cur == "**End**":
-                return " ".join(out)
+                detokenizer = MosesDetokenizer()
+                return detokenizer.detokenize(out, return_str=True)
             out.append(cur)
             if n == 2:
                 prev = cur
@@ -121,18 +124,18 @@ class DoubleMarkov(Markov):
     def __init__(self, text_one, text_two):
         self.text_one = text_one
         self.text_two = text_two
-        
+
         self.corpus = self.text_one.corpus + self.text_two.corpus
         self.unigrams = self.make_unigrams()
-        
+
         bigram_freqs = self.make_ngram_freqs_dict(2)
         self.bigrams = self.normalize_ngrams(bigram_freqs)
-        
+
         trigram_freqs = self.make_ngram_freqs_dict(3)
-        self.trigrams = self.normalize_ngrams(trigram_freqs)  
-        
-        self.ngrams = [None, self.unigrams, self.bigrams, self.trigrams]      
-        
+        self.trigrams = self.normalize_ngrams(trigram_freqs)
+
+        self.ngrams = [None, self.unigrams, self.bigrams, self.trigrams]
+
     def get_propers(self, text):
 
         table = string.maketrans("","")
@@ -144,20 +147,20 @@ class DoubleMarkov(Markov):
         return propers
 
     def is_sentence(self, sentence):
-    
+
         words = nltk.word_tokenize(sentence)
-    
+
         valid_sent = False
         pos = [p[0] for w, p in nltk.pos_tag(words)]
         for p1, p2 in izip(pos, pos[1:]):
             if (p1, p2) == ('N', 'V'):
                 valid_sent = True
         return valid_sent
-        
+
     def is_from_both_texts(self, sentence):
-    
+
         words = nltk.word_tokenize(sentence)
-    
+
         one = False
         two = False
         for w1, w2 in izip(words, words[1:]):
@@ -168,19 +171,15 @@ class DoubleMarkov(Markov):
 
         both = one and two
         return both
-        
-        
-    def make_tweet(self):
-    
-#        funny = ['bonnet', 'ball', 'casks', 'ship', 'marry', 'marriage', 'marries', 'married', 'creature', 'sea', 'whale']
 
+    def make_tweet(self):
         tweet = self.make_ngram_sentence()
         is_sent = self.is_sentence(tweet)
         both = self.is_from_both_texts(tweet)
-        
+
         amusing = len(tweet)/140 + is_sent + both
-                   
-        while len(tweet) > 140 or amusing < 1:
+
+        while len(tweet) > 140 or amusing < 2:
             tweet = self.make_ngram_sentence()
             is_sent = self.is_sentence(tweet)
             both = self.is_from_both_texts(tweet)
@@ -188,4 +187,3 @@ class DoubleMarkov(Markov):
 
         print amusing, len(tweet), is_sent, both
         return tweet
-        
